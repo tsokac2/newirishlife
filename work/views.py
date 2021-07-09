@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def index(request):
+    """ A view to return the Work page """
+
+    return render(request, 'work/work.html')
+
+

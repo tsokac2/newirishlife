@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% endblock %}
+{% block postloadjs %}
+<script>
+    var busMarkerUrl = "{% static 'media/bus_marker.png' %}";
+    var luasMarkerUrl = "{% static 'media/luas_marker.png' %}";
+    var dartMarkerUrl = "{% static 'media/dart_marker.png' %}";
+</script>
+<script  src="{% static 'js/markerclusterer_compiled.js' %}"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDadfKOCQK6Iu6tBeOXDAvZp5071lP8Us0&callback=initMap"></script>
+<script src="{% static 'js/maps.js' %}"></script>
+<script src="{% static 'js/emailnews.js' %}"></script>
+<script src="{% static 'js/cards.js' %}" ></script>
+{% endblock %}

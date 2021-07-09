@@ -1,0 +1,82 @@
+<footer class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="row justify-content-center footer-line">
+                <div class="col-4 l"></div>
+                <div class="col-2 g"></div>
+                <div class="col-4 l"></div>
+            </div>
+        </div>
+        <div class="col-12 text-center info">
+            <ul class="link-wrap">
+                <li class="r"><a class="text-decoration-none flex-link" href="{% url 'home' %}">HOME</a> </li>
+                <li class="r"><a class="text-decoration-none flex-link" href="{% url 'trip' %}">TRIP</a></li>
+                <li><a class="text-decoration-none flex-link" href="{% url 'work' %}">WORK</a></li>
+                <li class="l"><a class="text-decoration-none flex-link" href="{% url 'life' %}">LIFE</a></li>
+            </ul>
+        </div>
+        <div class="col-10 col-md-8 col-lg-7 text-center news">
+            <h2>Get monthly updates and free resources!</h2>
+            <form id="newsForm" class="form">
+                <div class="row justify-content-center m-0">
+                    <div class="col-12 col-sm-10 col-md-8 mt-input">
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter your name *" id="newsName" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-8 mt-email-input">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address *" id="newsEmail" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-8 ">
+                        <div class="form-group">
+                            <button id="newsSent" class="news-btn">Submit</button>
+                            <h4 id="tnx" class="sub-success">&nbsp;</h4>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-10 col-md-8 col-lg-7">
+            <div class="row justify-content-center social pb-4">
+                <div class="col-12">
+                    <h2 class="mission-h2  text-center">SHARE OUR MISSION</h2>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://www.instagram.com" class="social-link" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://twitter.com/?lang=en" class="social-link" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://www.facebook.com/" class="social-link" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="social-wrap">
+                    <a href="https://www.pinterest.ie/" class="social-link" target="_blank"><i
+                            class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row justify-content-center ">
+                <div class="col-12 col-sm-6 text-center copy-ts">
+                    <p><strong>&#169; NewIrishLife 2021</strong> | All rights reserved</p>
+                </div>
+                <div class="col-12 col-sm-6 text-center copy-ts">
+                    <p>Created by <a href="http://www.tomislavsokac.com/home"
+                            target="_blank"><strong>www.tomislavsokac.com</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

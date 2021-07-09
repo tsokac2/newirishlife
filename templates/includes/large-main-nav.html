@@ -1,0 +1,43 @@
+{% load static %}
+<nav class="container-fluid fixed-top d-none d-sm-block">
+    <div class="row justify-content-center">
+        <div class="col-12 large-menu-wrap">
+            <div class="row justify-content-center">  
+                <div class="col-2 mt-4 p-0 text-center ">
+                    <a href="{% url 'home' %}"><img src="{% static '/media/Logo.png' %}" 
+                        width="95" alt="New Irish Logo"></a>
+                </div>
+                <div class="col-5 mt-4 p-0 large-left-menu text-center">
+                    <a class="rm" href="{% url 'home' %}">HOME</a>
+                    <a class="rm" href="{% url 'trip' %}">TRIP</a>
+                    <a class="rm" href="{% url 'work' %}">WORK</a>
+                    <a href="{% url 'life' %}">LIFE</a>
+                </div>
+                <div class="col-5 p-0 mt-4 large-right-menu">
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'products' %}"><i class="fas fa-shopping-cart"></i>SHOP</a>
+                        <a href="{% url 'view_bag' %}">
+                            {% if grand_total %}
+                                <strong><i class="fas fa-shopping-bag"></i> &euro; {{ grand_total|floatformat:2 }}</strong>  
+                            {% else %}
+                                <i class="fas fa-shopping-bag"></i> Bag
+                            {% endif %}
+                        </a>
+                        <a href="{% url 'profile' %}"> <i class="fas fa-user-cog"></i>Profile</a>
+                    {% else %}
+                        <a class="rm" href="{% url 'account_login' %}"><i class="fas fa-sign-in-alt"></i>Login</a>
+                        <a class="rm" href="{% url 'products' %}"><i class="fas fa-shopping-cart"></i>SHOP</a>
+                        <a href="{% url 'view_bag' %}">
+                            {% if grand_total %}
+                              <strong><i class="fas fa-shopping-bag"></i> &euro; {{ grand_total|floatformat:2 }}</strong>  
+                            {% else %}
+                                <i class="fas fa-shopping-bag"></i> Bag
+                            {% endif %}
+                        </a>  
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row quote-borders p-2 mt-3"></div>
+        </div>
+    </div>
+</nav>

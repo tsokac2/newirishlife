@@ -1,0 +1,9 @@
+{% load i18n %}
+{% load account %}
+<div class="signup-app">
+{% user_display user as user_display %}
+<legend class="m-0 p-element">
+    <strong>{% trans "Note" %}:</strong> 
+    {% blocktrans %}you are already logged in as <strong class="user-name">{{ user_display }}</strong>.{% endblocktrans %}
+</legend>
+</div>

@@ -1,0 +1,20 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block inner_content %}
+<div class="signup-app">
+  <h2 class="accounts-heading m-0">{% trans "Enter your login details!" %}</h2>
+  <form class="login" method="POST" action="{% url 'account_login' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <button type="submit">{% trans "Login" %}</button>
+    <div class="p-element">
+      <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+    </div>
+  </form>
+  <h2 class="m-0 p-element m-0"><a href="{% url 'account_signup' %}"><strong>Create profile</strong></a> ,It's free and hardly takes more than 30 seconds</h2>
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-life">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 ">
+                        {% if bag_items %}
+                            <div class="row justify-content-center baskte-main-wrap">
+                                <div class="col-12 col-md-7"><h1 class="bag-h1">YOUR BAG</h1></div>
+                                <div class="col-12 col-md-5 bag-total-wrap">
+                                    <h6><strong>Bag Total: <span>&euro;{{ total|floatformat:2 }}</span></strong></h6>
+                                    <h6>Delivery: <span>&euro;{{ delivery|floatformat:2 }}</span></h6>
+                                    <h4 class="mt-4"><strong>Grand Total: <span>&euro;{{ grand_total|floatformat:2 }}</span></strong></h4>
+                                    {% if free_delivery_delta > 0 %}
+                                        <p class="text-danger">
+                                            You could get free delivery by spending just <strong>&euro;{{ free_delivery_delta }}</strong> more!
+                                        </p>
+                                    {% endif %}
+                                        <a class="keep-shop" href="{% url 'products' %}"><strong><i class="fas fa-angle-left"></i> KEEP SHOPPING</strong></a>
+                                        <a class="checkout" href="{% url 'checkout' %}"><strong>CHECKOUT <i class="fas fa-lock"></i></strong></a>
+                                </div>
+                                <div class="col-12 p-2 sub-section-border-products mt-4"></div>
+                            </div>
+                        {% endif %}
+                        <div class="row justify-content-start baskte-main-wrap">
+                            {% if bag_items %}
+                                <div class="col-12">
+                                    <div class="row justify-content-start">
+                                        <div class="col-12 p-0"><h2 class="product-info">PRODUCT(s) INFO:</h2></div>
+                                        {% for item in bag_items %}
+                                            <div class="col-12 order-md-1 p-0">
+                                                <div class="product-details-wrap">
+                                                    <a class="remove-item text-danger kill-item" id="remove_{{ item.item_id }}">
+                                                        <small><i class="fas fa-times"></i></small>
+                                                    </a>
+                                                    <h4 class="item-heading"><strong>{{ item.product.name }}</strong></h4>
+                                                    <div class="row pt-3 m-0">
+                                                        <div class="col-4 col-md-3 text-center p-0">
+                                                            <div class="row justify-content-center m-0">
+                                                                <div class="col-12 text-center p-0">
+                                                                    {% if item.product.image_1 %}
+                                                                        <img class="w-100" src="{{ item.product.image_1.url }}" alt="{{ item.product.name }}">
+                                                                    {% else %}
+                                                                        <img class="card-img" src="https://newirishlife.s3-eu-west-1.amazonaws.com/media/no-img.jpg" alt="{{ item.product.name }}">
+                                                                    {% endif %}
+                                                                </div>
+                                                                {% if item.product.rating > 4.5 %}
+                                                                    <div class="col-12 rating-product text-center">
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                    </div>
+                                                                {% elif item.product.rating < 4.5 %}
+                                                                    <div class="col-12 rating-product text-center">
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star "></i>
+                                                                        <i class="fas fa-star-half-alt"></i>
+                                                                    </div>
+                                                                {% else %}
+                                                                    <div class="col-12 rating-product"><p>No rating</p></div>
+                                                                {% endif %}
+                                                                <div class="col-12 rating-product text-center">
+                                                                    {% if item.product.rating > 4.5 %}
+                                                                        <p>{{ item.product.rating }}</p>  
+                                                                    {% else %}
+                                                                        <p>{{ item.product.rating }}</p>  
+                                                                    {% endif %}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-8 details-wrap">
+                                                            <div class="row m-0">
+                                                                <div class="col-12 col-md-6 p-0">
+                                                                    <h4 class="sku text-muted">SKU: {{ item.product.sku|upper }}</h4>
+                                                                    <h4 class="price">&euro;{{ item.product.price }}</h4>
+                                                                    <p class="p-0">{{ item.product.description | linebreaks }}</p>
+                                                                </div>
+                                                                <div class="col-12 col-md-6 quantity-bag-wrap">
+                                                                    <div class="row m-0">
+                                                                        <div class="col-12 col-sm-6 col-md-7 p-0">
+                                                                            <h4 class="quantity-heading text-left">Quantity:</h4>
+                                                                            <form  class="update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                                                                {% csrf_token %}
+                                                                                <div class="input-group mb-2">
+                                                                                    <div class="input-group-prepend">
+                                                                                        <button class="decrement-qty input-group-text" 
+                                                                                            data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                                                            <i class="fas fa-minus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input type="number" value="{{ item.quantity }}" min="1" max="99" name="quantity" class="form-control qty_input"
+                                                                                        data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                                                                    <div class="input-group-append">
+                                                                                        <button class="increment-qty input-group-text" 
+                                                                                            data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                                                            <i class="fas fa-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                            <a class="update-link quantity-update"><strong>Update</strong></a>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-6 col-md-5 subtotal-wrap">
+                                                                            <h6 class="subtotal-heading m-0">Subtotal:</h6>
+                                                                            <h4 class="subtotal-price">&euro;{{ item.product.price | calc_subtotal:item.quantity }}</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="col-12 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12"><h1 class="bag-h1">BAG IS EMPTY!</h1></div>
+                                        <div class="col-12">  
+                                            <a class="keep-shop" href="{% url 'products' %}">
+                                                <strong><i class="fas fa-angle-left"></i>Keep Shopping</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %} 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+{% include 'bag/includes/update_bag.html' %}
+<script src="{% static 'js/product_quantity_input.js' %}" ></script>
+<script src="{% static 'js/emailnews.js' %}"></script>
+<script src="{% static 'js/cards.js' %}" ></script>
+{% endblock %}

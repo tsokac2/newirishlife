@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-life">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 shop-intro-wrap">
+                                <h2 class="shop-h2">SHOP</h2>
+                                <div class="intro-life">
+                                    <p><strong>Take your pick!</strong></p>
+                                    <p>We set up a small souvenir e-store with traditional Irish <strong>"bits and pieces"</strong>.</p>
+                                    <p>For all, you Gunness lovers, sweet tooth lovers, souvenir collectors browse below and we are sure you 
+                                        will find something just for you.
+                                    </p>
+                                    <p><strong>So don't be shy...</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-1">
+                                <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel"
+                                    data-interval="2000">
+                                    <div class="carousel-inner gal-img">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/pr-gal-01.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/pr-gal-02.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/pr-gal-03.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-10 p-2 sub-section-border-products"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center category-menu">
+                        <ul class="link-wrap">
+                            <li class="r"><a class="text-decoration-none flex-link" href="{% url 'products' %}?category=guinness">Guinness</a> </li>
+                            <li class="r"><a class="text-decoration-none flex-link" href=" {% url 'products' %}?category=knitwear">Knitwear</a></li>
+                            <li><a class="text-decoration-none flex-link" href=" {% url 'products' %}?category=sweets">Sweets</a></li>
+                            <li class="l"><a class="text-decoration-none flex-link" href="{% url 'products' %}?category=gifts">Gifts</a></li>
+                            <li class="l"><a class="text-decoration-none flex-link l-w" href="{% url 'products' %}?category=offers">Offers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-lg-4 p-0 search-wrap">
+                        <div class="row justify-content-center m-0">
+                            <div class="col-12 p-0">
+                                <form method="GET" action="{% url 'products' %}">
+                                    <div class="input-group mb-2">
+                                        <input type="text" name="q" class="form-control" placeholder="Search our products">
+                                        <div class="input-group-prepend">
+                                        <button class="input-group-text" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 text-center p-0">
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a class="edit-product add-new-product" href="{% url 'add_new_product' %}">
+                                            <i class="fas fa-folder-plus"></i> Add New Product
+                                        </a>
+                                    </small>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 text-center sorting-group-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-sm-4 col-md-4 col-xl-4 products-count-wrap">
+                                <p class=" text-center">
+                                    {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                        <span><a href="{% url 'products' %}"><strong>Products</strong></a> | </span>
+                                    {% endif %}
+                                        <span>{{ products|length }}</span> Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-xl-3">
+                                <h2 class="products-h2">100% IRISH</h2>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-4 col-xl-4 p-0 text-center">
+                                <div class="sort-main-wraper">
+                                    <div class="input-group">
+                                        <select id="sort-selector">
+                                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-9 products-main-wrap p-0">
+                        {% for product in products %}
+                            <div class="wrap">
+                                <div class="card-heading-wrap text-center mb-3">
+                                    <a class="product-heading" href="{% url 'product_detail' product.id %}"><strong>{{ product.name }}</strong></a>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="row justify-content-center footer-line">
+                                        <div class="col-4 l"></div>
+                                        <div class="col-2 g"></div>
+                                        <div class="col-4 l"></div>
+                                    </div>
+                                </div>
+                                {% if product.image_1 %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img" src="{{ product.image_1.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img" src="https://newirishlife.s3-eu-west-1.amazonaws.com/media/no-img.jpg" alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="price-wrap">
+                                            {% if product.sale_price > 1 %}
+                                                <a class="price" href="{% url 'product_detail' product.id %}"><strong>&euro;{{ product.price }}</strong></a>
+                                            {% else %}
+                                                <a class="price" href="{% url 'product_detail' product.id %}"><strong>&euro;{{ product.price }}</strong></a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        {% if product.rating >= 4.5 %}
+                                            <div class="rating-wrap">
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                            </div>
+                                        {% elif product.rating < 4.5 %}
+                                            <div class="rating-wrap">
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star mr-1"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        {% else %}
+                                            <div class="rating-wrap">
+                                                <p>No rating</p>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        {% if product.rating %}
+                                            <p class="text-muted">{{ product.rating }} / 5</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start p-0">
+                                    <div class="col text-left category-link-wrap">
+                                        {% if product.category %}
+                                            <a href="{% url 'products' %}?category={{ product.category.name }}"> 
+                                                <i class="fas fa-tags"></i> <strong>{{ product.category.friendly_name }}</strong>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block postloadjs %}
+    <script src="{% static 'js/emailnews.js' %}"></script>
+    <script src="{% static 'js/cards.js' %}" ></script>
+    {{ block.super }}
+    <script src="{% static 'js/sort.js' %}" ></script>
+{% endblock %}

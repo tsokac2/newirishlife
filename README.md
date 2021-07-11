@@ -1,10 +1,10 @@
-<h1 align="center"><a>https://newirishlife.herokuapp.com/</a></h1>
+<h1 align="center">New Irish Life</h1>
 
 Web-based travel guide for providing correct information for a fresh start on Irish grounds.
 Finding work, a place to stay, where to buy good cheap food in Ireland. 
 All of this can be difficult in the beginning but with the correct preparation,
 advice, and planning this task can be made a lot easier.
-New Irish Life is a great starting point.
+**[New Irish Life](https://newirishlife.herokuapp.com/)** is a great starting point.
 
 ![Website Main Mockup](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Main.jpg)
 
@@ -359,3 +359,12 @@ User stories are presented for 3 different User types:
 * **FOOTER** section general idea - for Small devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W3_Footer.png)**
 
 ****
+
+# FEATURES
+
+## MAIN MENU
+Formatted in three main sections:
+* Website logo
+* Website sections **[HOME](https://newirishlife.herokuapp.com/)**, **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**.
+* _First Time Visitor_ User action links **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**.
+* _Active User_ action links **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**, **PROFILE**.

@@ -1,0 +1,9 @@
+{% if widget.is_initial %}
+{{ widget.input_text }}
+{% endif %}
+<span class="btn btn-black rounded-0 btn-file">
+    Choose Image <input id="new-image_3" class="new-product-img" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+</span>
+<strong><p id="filename_3"></p></strong>
+<strong><p class="chose-image">Recommended profile image size <span>500px x 500px</span>!</p></strong>
+

@@ -368,3 +368,161 @@ Formatted in three main sections:
 * Website sections **[HOME](https://newirishlife.herokuapp.com/)**, **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**.
 * _First Time Visitor_ User action links **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**.
 * _Active User_ action links **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**, **PROFILE**.
+
+## HOME
+Simple introduction of web page purpose and what value it is bringing to an end-user.
+
+Formatted in three main sub-sections:
+* Movie reference pitch - from -  _"The Hobbit: An Unexpected Journey"_.
+* Welcoming **_"HERO"_** area with image composition.
+* Quick box-model overview of the web page main sections  **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**, **[SHOP](https://newirishlife.herokuapp.com/products/)** sections.
+
+## TRIP
+Section introduction with intro reference and **"call-to-action"** headings.
+
+Formatted in two main sub-sections:
+* **_CHOOSE WISELY_** Flights booking web services.
+* **_HOP ON_** Ireland public transportation's most popular options and guidelines.
+* **Google Maps** with a tracker for public transportation and _"Hot"_ locations in Dublin city with 3 markers in different colors for **Dublin Bus**, **Dart Train**, and **Luas** services - **[View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/google_maps_overview.png)**.
+
+## WORK
+Introduction and quick links of the most popular Irish online recruitment sites with an additional section for online education possibilities.
+
+Formatted in two main sub-sections:
+* **_START HERE_** Most popular job search services for the Irish job market.
+* **_BACK TO SCHOOL_** Most popular online courses and full-time education institutions.
+
+## LIFE
+Section with life essentials factors after moving to Ireland.
+
+Formatted in three main sub-sections:
+* **_ACCOMMODATION_** Online rental agencies.
+* **_MOBILE NETWORKS_** Mobile/internet networks providers.
+* **_GROCERY SHOPS_** Irish Top food chains for grocery shopping.
+
+## LOGIN
+Section with the option to **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** to a user profile for full website management.
+
+Formatted in three main sub-sections:
+* **_Enter your login details!_** Login form including inputs fields for; _Username or e-mail_ and  _Password_.
+* Call-to-action links; **_"Remember Me"(save login details)_**, **_[Forgot Password?](https://newirishlife.herokuapp.com/accounts/password/reset/)_**, **_[Create profile](https://newirishlife.herokuapp.com/accounts/signup/)_** link.
+* Overview of the website purpose displayed in four cards - **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**.
+* Introduction of web page purpose and what value it is bringing to an end-user.
+
+## SIGNUP
+Section with the option to **_[Create profile](https://newirishlife.herokuapp.com/accounts/signup/)_** for full website management.
+
+Formatted in three main sub-sections:
+* **_[Create profile](https://newirishlife.herokuapp.com/accounts/signup/)_** Registration form including inputs fields for; __E-mail address_, _E-mail address confirmation_, _Username_, _Password_, _Password (again)_, and _SIGN UP_ button.
+* Call-to-action link: **_"Already have an account? [Login](https://newirishlife.herokuapp.com/accounts/login/)"_**.
+* Overview of the website purpose displayed in four cards - **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**.
+* Introduction of web page purpose and what value it is bringing to an end-user.
+
+## PROFILE
+Section for Active User profile details and shipping details.
+
+Formatted in three main profile sections:
+* **_Profile Details_**  section includes; _Profile Image_, _Full Name_, _Username_, _Email_, _Create Date_.
+* **_Delivery address user details_**:
+    * Full name
+	* Phone number
+	* Street address 1
+	* Street address 2
+	* City
+	* County
+	* Postcode
+	* Country
+* **Order History** section includes order card element with order details; 
+    * Link Order number for full order details.
+    * Order data
+    * Order Items
+    * Total amount spent
+* Call-to-action buttons: **Logout**, **Update Details**, **DELETE PROFILE**.
+
+## SHOP
+A section that offers traditional Irish Souvenirs purchasing options.
+
+Formatted in three main profile sections:
+* Section introduction with an image slide show.
+* Categorise menu including _search_ input field and product _sorting_ options.
+* **20** Products cards elements with the following details:
+    * Product Name (action link)
+    * Product Image (action link)
+    * Product Price (action link)
+    * Product Rating
+    * Product Category (action link)
+
+## PRODUCT DETAILS
+A section for each individual product and call-to-action buttons.
+
+Formatted in four main profile sections:
+* Categories menu including a search input field.
+* Product image slide show with image thumbnails.
+* Product detail card including:
+    * Product Name 
+    * Product Rating 
+    * Special Offer 
+    * Product Price 
+    * Quantity input field 
+    * **["Keep Shopping"](https://newirishlife.herokuapp.com/products/)**
+    * "Add To Bag"(action link)
+* Product description section.
+
+## BAG
+A section review and start **"Checkout"** process for requested items.
+
+Formatted in two sections:
+* Shopping **[BAG](https://newirishlife.herokuapp.com/bag/)** Total spending amount including:
+    * Bag Total amount
+    * Delivery charges amount
+    * Grand Total amount
+    * **["Keep Shopping"](https://newirishlife.herokuapp.com/products/)** button
+    * The "Checkout" button
+* **[BAG](https://newirishlife.herokuapp.com/bag/)** Products info section contains a product card element with the following details and call-to-action buttons/links:
+    * Product Name
+    * Product Image
+    * Product Rating
+    * Product SKU number
+    * Product Price
+    * Product Description
+    * Product Quantity input field
+    * Update button
+    * **"X"** remove an item from the shopping **[BAG](https://newirishlife.herokuapp.com/bag/)** button
+
+## CHECKOUT
+A section review and finish **"Checkout"** process for requested items.
+
+Formatted in two sections:
+* _"Complete your order"_ form including the following form sections:
+    * User Details
+    * Shipping details
+    * Payment Details
+* Summary section includes:
+    * Number of Items
+    * Order Item details
+    * Order Total
+    * Delivery Cost 
+    * Grand Total
+
+## FOOTER
+Replicated through all website sections.
+
+Formatted in 4 sections:
+* Mani menu links including **[HOME](https://newirishlife.herokuapp.com/)**, **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work) [LIFE](https://newirishlife.herokuapp.com/life)**.
+* _Newsletter_ user form with inputs fields: _Name_, _Email_ and _Submit_ button.
+* Social links for sharing purposes including **[Instagram](https://www.instagram.com/)**, **[Twitter](https://twitter.com/)**, **[Facebook](https://www.facebook.com/)**, **[Pinterest](https://www.pinterest.ie/)**.
+* Credits with developer **[website link](http://www.tomislavsokac.com/home)**.
+
+## CROS-PROJECT FEATURES
+* Alert messages for action confirmation regarding call-to-action purposes **![View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/messages_overview.png)**.
+* **_Quick Links..._** Quick link option for precise user search in specified link area - **![View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks.png)**.
+* Image slide-show representation section elements.
+* Welcoming **[HOME](https://newirishlife.herokuapp.com/) _"HERO"_** section; **[HOME](https://newirishlife.herokuapp.com/)** image composition section followed with four cards with **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**, and **[SHOP](https://newirishlife.herokuapp.com/products/)** headings is replicated through the website.
+
+### Features Left to Implement
+Expansion plan:
+* Implementing "post a comment" section in a footer, regarding specific website content and website idea proposals.
+* Implement section for all necessary documentation in Ireland, regarding and PPS number, Bank Account option.
+* Implement section regarding social events and gathering for necessary user connection expansion.
+* Offer **_" Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
+* Create an email alert for admin and a friendly auto reminder for a user in case the user didn't finish the **_"Checkout/Payment"_** process.

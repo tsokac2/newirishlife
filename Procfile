@@ -1,0 +1,1 @@
+web: gunicorn newirishlife.wsgi:application

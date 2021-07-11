@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-profile">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center">
+                            <div class="col-12 large-right-menu p-0">
+                               <h1 class="profile-h1">PROFILE</h1>
+                               <a href="{% url 'account_logout' %}" data-toggle="modal" data-target="#logout-profile">
+                                   <i class="fas fa-sign-out-alt"></i>Logout
+                                </a>
+                            </div>
+                            <div class="col-12 p-2 quote-borders mt-4"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-sm-10 col-md-6 p-0">
+                                        <h2 class="update-heading text-center">Profile Details</h2>
+                                        <div class="row justify-content-center footer-line m-0">
+                                            <div class="col-5 col-md-4 l"></div>
+                                            <div class="col-2 g"></div>
+                                            <div class="col-5 col-md-4 l"></div>
+                                        </div>
+                                        <div class="row justify-content-start m-0 px-3">
+                                            {% if user.userprofile.profile_image %}
+                                                <div class="col-12 col-sm-4 p-0">
+                                                    <div class="image-wrap">
+                                                        <img src="{{user.userprofile.profile_image.url}}" alt="Profile image">
+                                                    </div>
+                                                </div>
+                                            {% else %}
+                                                <div class="col-12 col-sm-4 p-0">
+                                                    <div class="image-wrap">
+                                                        <img class="img-fluid" src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/default.jpg" alt="Default profile image">
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                            <div class="col-12 col-sm-8 col-md-7 user-details-wrap">
+                                                <div class="row justify-content-start">
+                                                    <div class="col-12 p-0 text-center mt-det">
+                                                        {% if user.userprofile.full_name %}
+                                                            <h2 class="full-name m-0">{{ user.userprofile.full_name }}</h2>
+                                                        {% else %}
+                                                            <h2 class="full-name m-0 text-info">Update your details below...</h2>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div class="lable-wrap mt-det-2">
+                                                        <div class="user-det-heading">Username:</div>
+                                                    </div>
+                                                    <div class="username-wraper">
+                                                        <div class="icon-wrap"><i class="fas fa-user"></i></div>
+                                                        <div class="user-name-wrap">
+                                                            <span>{{ user.username }}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lable-wrap mt-det-3">
+                                                        <div class="user-det-heading">Email:</div>
+                                                    </div>
+                                                    <div class="username-wraper">
+                                                        <div class="icon-wrap"><i class="fas fa-at"></i></div>
+                                                        <div class="user-email-wrap">
+                                                            <span>{{ user.email }}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-det text-right">
+                                                        <p class="date-created">Created on: <strong>{{ user.userprofile.date_created | date:'d-m-Y' }}</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center footer-line mt-3 mx-0">
+                                            <div class="col-5 col-md-4 l"></div>
+                                            <div class="col-2 g"></div>
+                                            <div class="col-5 col-md-4 l"></div>
+                                        </div>
+                                        <div class="profile-update-wrap">
+                                            <form action="{% url 'profile' %}" method="POST" enctype="multipart/form-data" id="profile-update-form">
+                                                {% csrf_token %}
+                                                {% for field in form %}
+                                                    {% if field.name != 'profile_image' %}
+                                                        {{ field | as_crispy_field }}
+                                                    {% else %}
+                                                        {{ field }}
+                                                    {% endif %}
+                                                {% endfor %}
+                                                <div class="row justify-content-center">
+                                                    <div class="col text-center mt-4">
+                                                        <button class="text-uppercase mb-4"><i class="fas fa-user-edit"></i> Update Details</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="row justify-content-start m-0 p-0">
+                                            <div class="col-12 col-md-11">
+                                                <fieldset id="danger-zone">
+                                                    <legend class="text-danger"><strong>Danger Zone</strong></legend>
+                                                    <a href="#" class="delete-profile" data-toggle="modal" data-target="#delete-profile">
+                                                        <i class="far fa-trash-alt"></i>
+                                                        DELETE PROFILE
+                                                    </a>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-10 col-md-6 p-0">
+                                        <h2 class="update-heading text-center">Order History</h2>
+                                        <div class="row justify-content-center footer-line">
+                                            <div class="col-4 l"></div>
+                                            <div class="col-2 g"></div>
+                                            <div class="col-4 l"></div>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            {% if orders %}
+                                                {% for order in orders %}
+                                                <div class="col-12 col-md-10 ">
+                                                    <div class="row order-card-wrap">
+                                                        <div class="col-4 mt-2"><h4>Order No.:</h4></div>
+                                                        <div class="col-8 mt-2">
+                                                            <a href="{% url 'order_history' order.order_number %}"
+                                                                title="{{ order.order_number }}">
+                                                                {{ order.order_number|truncatechars:6 }}
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4"><h4>Date:</h4></div>
+                                                        <div class="col-8"><legend>{{ order.date }}</legend></div>
+                                                        <div class="col-4 mt-2"><h4>Item(s):</h4></div>
+                                                        <div class="col-8 mt-2">
+                                                            <ul class="list-unstyled">
+                                                                {% for item in order.lineitems.all %}
+                                                                    <li><strong>{{ item.quantity }}</strong> x {{ item.product.name }}</li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-4 mt-2">
+                                                            <h4>Order Total:</h4> 
+                                                        </div>
+                                                        <div class="col-8 mt-2"><legend><span>&euro;{{ order.grand_total }}</span></legend></div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                            {% else %}
+                                                <div class="col-12 text-center">
+                                                    <div class="no-orders">You have no orders!</div>
+                                                    <a class="chek-shop" href="{% url 'products' %}">
+                                                        <strong><i class="fas fa-angle-left"></i>Keep Shopping</strong>
+                                                    </a>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal-wrap" id="delete-profile" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="delete-profile" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">    
+                                <div class="modal-body">
+                                    <div class="container-fluid p-0">
+                                        <div class="row justify-content-center text-center">
+                                            <div class="col-12 col-sm-8">
+                                                <div class="modal-heading">Are you sure you want to delete your profile?</div>
+                                                <a href="#" data-dismiss="modal">No</a>
+                                                <a class="delet-product" href="{% url 'delete_profile' user.id %}">Yes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal-wrap" id="logout-profile" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="logout-profile" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">    
+                                <div class="modal-body">
+                                    {% load i18n %}
+                                    {% block inner_content %}
+                                    <div class="container-fluid p-0">
+                                        <div class="row justify-content-center text-center">
+                                            <div class="col-12 col-sm-8">
+                                                <div class="modal-heading">{% trans 'Are you sure you want to logout?' %}</div>
+                                                <form method="post" action="{% url 'account_logout' %}">
+                                                    {% csrf_token %}
+                                                    {% if redirect_field_value %}
+                                                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                                                    {% endif %}
+                                                    <a href="#" data-dismiss="modal">No</a>
+                                                    <button type="submit">{% trans 'Yes' %}</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endblock %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script src="{% static 'js/emailnews.js' %}"></script>
+<script src="{% static 'js/countryfield.js' %}"></script>
+<script src="{% static 'js/add_edit_product.js' %}"></script>
+{% endblock %}

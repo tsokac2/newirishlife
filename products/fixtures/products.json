@@ -1,0 +1,322 @@
+[
+    {
+        "pk":1,
+        "model": "products.product",
+        "fields": {
+            "sku": "g05202101",
+            "name": "Decoration Mural Posters",
+            "description": "This tin sign has weather resistance and water resistance, and is easy to hang, and can be perfectly added to any area or room. Suitable for many places, such as bars, coffee shops, restaurants, family residences, and various individual places. ",
+            "price": "6.99",
+            "sale_price": "0",
+            "category": 1,
+            "rating":"4.5",
+            "image_1": "g01_1.jpg",
+            "image_2": "g01_2.jpg",
+            "image_3": "g01_3.jpg"
+        }
+    },
+    {
+        "pk":2,
+        "model": "products.product",
+        "fields": {
+            "sku": "g05202102",
+            "name": "Guinness Harp Glass",
+            "description": "This Guinness Pint Glass is exactly what your home bar needs. Imagine enjoying a cold Guinness from your Guinness pint glass, you’ll feel as if you’re in an old Irish pub of your own. Is branded with the traditional Guinness logo and colors, and an embossed Guinness Harp on the back. This 20 oz. glass makes for a perfect gift for St. Patrick's Day or addition to your bar.",
+            "price": "9.99",
+            "sale_price": "0",
+            "category": 1,
+            "rating":"4.8",
+            "image_1": "g02_1.jpg",
+            "image_2": "g02_2.jpg",
+            "image_3": "g02_3.jpg"
+        }
+    },
+    {
+        "pk":3,
+        "model": "products.product",
+        "fields": {
+            "sku": "g05202103",
+            "name": "Guinness Chocolate Egg",
+            "description": "This luxury confectionery range celebrates the perfect combination of two exceptional brands renowned for over two centuries for their unique taste. Guinness, the world's most famous stout, has come together with Lir, Ireland's award-winning chocolatiers, to create a new taste experience for Guinness lovers.",
+            "price": "20",
+            "sale_price": "0",
+            "category": 1,
+            "rating":"5",
+            "image_1": "g03_1.jpg",
+            "image_2": "g03_2.jpg",
+            "image_3": "g03_3.jpg"
+        }
+    },
+    {
+        "pk":4,
+        "model": "products.product",
+        "fields": {
+            "sku": "g05202104",
+            "name": "Guinness Potato Chips",
+            "description": "Packed with the amazing and familiar flavor of Guinness. No artificial flavors or colors. No hydrogenated or trans fats. Suitable for vegetarians and vegans.",
+            "price": "2.99",
+            "sale_price": "0",
+            "category": 1,
+            "rating":"5.0",
+            "image_1": "g04_1.jpg",
+            "image_2": "g04_2.jpg",
+            "image_3": "g04_3.jpg"
+        }
+    },
+    {
+        "pk":5,
+        "model": "products.product",
+        "fields": {
+            "sku": "k05202101",
+            "name": "Tradition Wrap Button Scarf",
+            "description": "Traditional Chunky Multi cable button scarf - Unisex. Due to the nature of the fabric and hand finishing the sizing is approximate. Gentle 30degree machine wash. Dry flat away from direct heat. Do not bleach. Do not tumble dry. Very cool iron only. Do not iron leather tab.",
+            "price": "18.99",
+            "sale_price": "0",
+            "category": 2,
+            "rating":"4.5",
+            "image_1": "k01_1.jpg",
+            "image_2": "k01_2.jpg",
+            "image_3": "k01_3.jpg"
+        }
+    },
+    {
+        "pk":6,
+        "model": "products.product",
+        "fields": {
+            "sku": "k05202102",
+            "name": "Ladies Pink Hat",
+            "description": "This beautifully crafted Irish Tweed women's hat features stylish detailing and has an adjustable and flattering fit.",
+            "price": "29.99",
+            "sale_price": "0",
+            "category": 2,
+            "rating":"4.5",
+            "image_1": "k02_1.jpg",
+            "image_2": "k02_2.jpg",
+            "image_3": "k02_3.jpg"
+        }
+    },
+    {
+        "pk":7,
+        "model": "products.product",
+        "fields": {
+            "sku": "k05202103",
+            "name": "Flock Of Sheep Hat",
+            "description": "Machine wool wash max 30 degrees or cool handwash. Short spin. Dry flat. Do not tumble dry.",
+            "price": "24.95",
+            "sale_price": "0",
+            "category": 2,
+            "rating":"4.8",
+            "image_1": "k03_1.jpg",
+            "image_2": "k03_2.jpg",
+            "image_3": "k03_3.jpg"
+        }
+    },
+    {
+        "pk":8,
+        "model": "products.product",
+        "fields": {
+            "sku": "k05202104",
+            "name": "Irish Blue Patch Cap",
+            "description": "Its smart yet plain-woven style makes it a timeless piece and its luxurious quilted lining also ensures it's a comfortable and cozy choice for the Winter season.",
+            "price": "29.99",
+            "sale_price": "0",
+            "category": 2,
+            "rating":"4.3",
+            "image_1": "k04_1.jpg",
+            "image_2": "k04_2.jpg",
+            "image_3": "k04_3.jpg"
+        }
+    },
+    {
+        "pk":9,
+        "model": "products.product",
+        "fields": {
+            "sku": "s05202101",
+            "name": "Vanilla Fudge 2kg Tub",
+            "description": "Vanilla Fudge containing squares of soft vanilla flavored fudge in a resealable tub, ideal for snacking, baking, and parties. Each tub contains 2kg.",
+            "price": "15.99",
+            "sale_price": "0",
+            "category": 3,
+            "rating":"5.0",
+            "image_1": "s01_1.jpg",
+            "image_2": "s01_2.jpg",
+            "image_3": "s01_3.jpg"
+        }
+    },
+    {
+        "pk":10,
+        "model": "products.product",
+        "fields": {
+            "sku": "s05202102",
+            "name": "Guinness Toffee Bag 120G",
+            "description": "This bag of luxury toffee sweets is from the Official Guinness Collection. It contains < 1% alcohol soya and gluten and may contain traces of nuts. 120g.",
+            "price": "3",
+            "sale_price": "0",
+            "category": 3,
+            "rating":"4.5",
+            "image_1": "s02_1.jpg",
+            "image_2": "s02_2.jpg",
+            "image_3": "s02_3.jpg"
+        }
+    },
+    {
+        "pk":11,
+        "model": "products.product",
+        "fields": {
+            "sku": "s05202103",
+            "name": "Irish Assorted Fudge",
+            "description": "The legend of Irish beauty Kate Kearney has touched the hearts of visitors to Ireland for hundreds of years. She was well known for her generosity to passing travelers at her cottage in Killarney Co. Kerry.",
+            "price": "7",
+            "sale_price": "0",
+            "category": 3,
+            "rating":"4.8",
+            "image_1": "s03_1.jpg",
+            "image_2": "s03_2.jpg",
+            "image_3": "s03_3.jpg"
+        }
+    },
+    {
+        "pk":12,
+        "model": "products.product",
+        "fields": {
+            "sku": "s05202104",
+            "name": "Irish Chocolate Collection",
+            "description": "If you've got a sweet tooth and are looking for something delicious and Irish these chocolates are a great choice! This Baileys chocolate collection box is just the thing if you want to indulge or if you want to get a loved one a thoughtful gift. Containing 20 chocolates this box surprises you with every bite.",
+            "price": "15",
+            "sale_price": "0",
+            "category": 3,
+            "rating":"4.5",
+            "image_1": "s04_1.jpg",
+            "image_2": "s04_2.jpg",
+            "image_3": "s04_3.jpg"
+        }
+    },
+    {
+        "pk":13,
+        "model": "products.product",
+        "fields": {
+            "sku": "gf05202102",
+            "name": "Harvey's Pocket Pool",
+            "description": "Are you and your mates bored at work? Or just need a five-minute break to focus your minds? Try Pocket Pool from Harvey's Board Games.",
+            "price": "5",
+            "sale_price": "0",
+            "category": 4,
+            "rating":"4.5",
+            "image_1": "gf02_1.jpg",
+            "image_2": "gf02_2.jpg",
+            "image_3": "gf02_3.jpg"
+        }
+    },
+    {
+        "pk":14,
+        "model": "products.product",
+        "fields": {
+            "sku": "gf05202103",
+            "name": "Lavender Healing Bath Salts",
+            "description": "Transform your bathroom into a luxurious spa with this jar of bath soaks from Herb Dublin. They are infused with magnesium-rich Epsom salts that are known to reduce stress and promote a good night's sleep. With essential oils that release a soothing scent of lavender 4-6 scoops of these salts in a warm bath is the perfect way to unwind in the evenings",
+            "price": "10",
+            "sale_price": "0",
+            "category": 4,
+            "rating":"4.4",
+            "image_1": "gf03_1.jpg",
+            "image_2": "gf03_2.jpg",
+            "image_3": "gf03_3.jpg"
+        }
+    },
+    {
+        "pk":15,
+        "model": "products.product",
+        "fields": {
+            "sku": "gf05202104",
+            "name": "Irish Who Am I Party Game",
+            "description": "With 100 names to try to figure out, it's a wonderful way to have a bit of fun with friends or family. Simply hold up a card that everyone else can see, and ask questions to try and work out your brand-new identity.",
+            "price": "10",
+            "sale_price": "0",
+            "category": 4,
+            "rating":"5.0",
+            "image_1": "gf04_1.jpg",
+            "image_2": "gf04_2.jpg",
+            "image_3": "gf04_3.jpg"
+        }
+    },
+    {
+        "pk":16,
+        "model": "products.product",
+        "fields": {
+            "sku": "gf05202105",
+            "name": "Model Of Aer Lingus Airbus",
+            "description": "This diecast model is a replica of the Aer Lingus Boeing A320. Comes in green color with stunning details.",
+            "price": "12",
+            "sale_price": "0",
+            "category": 4,
+            "rating":"4.7",
+            "image_1": "gf05_1.jpg",
+            "image_2": "gf05_2.jpg",
+            "image_3": "gf05_3.jpg"
+        }
+    },
+    {
+        "pk":17,
+        "model": "products.product",
+        "fields": {
+            "sku": "o05202101",
+            "name": "Green Colour Blend Blanket",
+            "description": "If you want an authentic Irish item for your home don't miss out on these throws! Made from a quality wool blend these throws are stunning in look and will stand the test of time. ",
+            "price": "35",
+            "sale_price": "25",
+            "category": 5,
+            "rating":"4.9",
+            "image_1": "o01_1.jpg",
+            "image_2": "o01_2.jpg",
+            "image_3": "o01_3.jpg"
+        }
+    },
+    {
+        "pk":18,
+        "model": "products.product",
+        "fields": {
+            "sku": "o05202102",
+            "name": "Guinness Towel, Coaster Pack",
+            "description": "Make your very own bar at home with this Guinness bar towel and assorted coaster set which are part of the Guinness Official Collection. They are both designed with the traditional extra stout label. A perfect touch of Guinness for your home.",
+            "price": "9.99",
+            "sale_price": "6.99",
+            "category": 5,
+            "rating":"4.1",
+            "image_1": "g05_1.jpg",
+            "image_2": "g05_2.jpg",
+            "image_3": "g05_3.jpg"
+        }
+    },
+    {
+        "pk":19,
+        "model": "products.product",
+        "fields": {
+            "sku": "o05202103",
+            "name": "Ireland Chocolate Coin",
+            "description": "This chocolate coin is embedded with the pattern seen on the wrapping. A perfect way to remember your trip to Ireland by eating this Chocolate coin.",
+            "price": "3",
+            "sale_price": "1",
+            "category": 5,
+            "rating":"5.0",
+            "image_1": "s05_1.jpg",
+            "image_2": "s05_2.jpg",
+            "image_3": "s05_3.jpg"
+        }
+    },
+    {
+        "pk":20,
+        "model": "products.product",
+        "fields": {
+            "sku": "o05202104",
+            "name": "Sky Bamboo Travel Cup",
+            "description": "Brighten up your travels with this stunning travel mug. Part of the Orla Kiely range you know that it's made of quality materials, the lovely sky flower scallop design is catching on the eye.",
+            "price": "25",
+            "sale_price": "15",
+            "category": 5,
+            "rating":"5.0",
+            "image_1": "o05_1.jpg",
+            "image_2": "o05_2.jpg",
+            "image_3": "o05_3.jpg"
+        }
+    }
+]

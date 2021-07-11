@@ -1,0 +1,42 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "guinness",
+      "friendly_name": "Guinness"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "knitwear",
+      "friendly_name": "Knitwear"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "sweets",
+      "friendly_name": "Sweets"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "gifts",
+      "friendly_name": "Gifts"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "offers",
+      "friendly_name": "Offers"
+    }
+  }
+]

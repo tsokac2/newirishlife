@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+{% block content %}
+<div id="blur-overlay">
+    <div class="text-light load-spinner-wrap">
+        <div class="box"><div class="loader-c"></div></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-checkout">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 ">
+                        <div class="row justify-content-center">
+                            <div class="col-12"><h1 class="checkout-h1">CHECKOUT</h1></div>
+                            <div class="col-12 p-2 quote-borders mt-4"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-5 order-sm-2 order-summary-wrap">
+                                <h3 class="summary-heading">SUMMARY:</h3>
+                                <h4 class="items-heading ">Number of Items <strong>({{ product_count }})</strong></h4>
+                                <div class="row justify-content-start">
+                                    {% for item in bag_items %}
+                                        <div class="col-12 product-summary-wrap">
+                                            <div class="row m-0">
+                                                <div class="col-3 px-1 py-1">
+                                                    <a href="{% url 'product_detail' item.product.id %}">
+                                                        {% if item.product.image_1 %}
+                                                            <img class="w-100" src="{{ item.product.image_1.url }}" alt="{{ product.name }}">
+                                                        {% else %}
+                                                            <img class="w-100" src="https://newirishlife.s3.eu-west-1.amazonaws.com/media/no-img.jpg"  alt="{{ product.name }}">
+                                                        {% endif %}
+                                                    </a>
+                                                </div>
+                                                <div class="col-9">
+                                                    <h4 class="item-name"><strong>{{ item.product.name }}</strong></h4>
+                                                    <h6 class="item-det"><strong>Qty:{{ item.quantity }}</strong> </h6>
+                                                    <h6 class="item-det">Price: <span>&euro;{{ item.product.price | calc_subtotal:item.quantity }}</span></h6>
+                                                    <a class="item-det-link" href="{% url 'product_detail' item.product.id %}"><i class="fas fa-info-circle"></i> <strong>Details</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-4 mb-4">
+                                            <div class="row justify-content-center border-last-line">
+                                                <div class="col-4 l"></div>
+                                                <div class="col-2 g"></div>
+                                                <div class="col-4 l"></div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                    <div class="col-12 px-3 summary-total">
+                                        <h6><strong>Order Total:<span> &euro;{{ total | floatformat:2 }}</span></strong> </h6>
+                                        <h6>Delivery: <span>&euro;{{ delivery|floatformat:2 }}</span></h6>
+                                        <h4 class="mt-4"><strong>Grand Total: <span>&euro;{{ grand_total|floatformat:2 }}</span></strong></h4>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="row justify-content-center footer-line">
+                                            <div class="col-4 l"></div>
+                                            <div class="col-2 g"></div>
+                                            <div class="col-4 l"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-7 order-sm-1 form-wrap p-0">
+                                <h5 class="form-heading ml-3"><strong>Complete your order:</strong></h5>
+                                <div class="row m-0">
+                                    <div class="col-12 col-sm-12 col-md-10 p-0 m-0">
+                                        <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                                            {% csrf_token %}
+                                            <fieldset class="rounded px-3 mb-5 mt-3">
+                                                <legend class="px-2 w-auto user-det-heading"><strong>Details</strong></legend>
+                                                {{ order_form.full_name | as_crispy_field }}
+                                                {{ order_form.email | as_crispy_field }}
+                                            </fieldset>
+                                            <fieldset class="rounded px-3 mb-3">
+                                                <legend class="px-2 w-auto user-det-heading"><strong>Shipping details</strong></legend>
+                                                {{ order_form.phone_number | as_crispy_field }}
+                                                {{ order_form.street_address1 | as_crispy_field }}
+                                                {{ order_form.street_address2 | as_crispy_field }}
+                                                {{ order_form.town_or_city | as_crispy_field }}
+                                                {{ order_form.county | as_crispy_field }}
+                                                {{ order_form.postcode | as_crispy_field }}
+                                                {{ order_form.country | as_crispy_field }}
+                                                <div class="form-check form-check-inline float-right mr-0">
+                                                    {% if user.is_authenticated %}
+                                                        <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                                                        <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                                                    {% else %}
+                                                        <label class="form-check-label-wrap text-left" for="id-save-info">
+                                                            <a href="{% url 'account_signup' %}"><strong>Create an account</strong></a> or 
+                                                            <a href="{% url 'account_login' %}"><strong>login</strong></a> to save this information
+                                                        </label>
+                                                    {% endif %}
+                                                </div>
+                                            </fieldset>
+                                            <div class="stripe-wraper px-3">
+                                                <fieldset class="rounded mt-3">
+                                                    <legend class=" w-auto user-det-heading"><strong>Payment details</strong></legend>
+                                                </fieldset>                                                
+                                                <div class="form-group">
+                                                    <div class="row justify-content-start">
+                                                        <div class="col-12">
+                                                            <label for="card-number">Card Number</label>
+                                                            <div id="card-number" class="StripeElement-cards"></div>
+                                                            <div class="mt-3 text-danger" id="card-errors" role="alert"></div>
+                                                            <input type="hidden" value="{{ client_secret }}" name="client_secret">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row justify-content-start m-0 p-0">
+                                                        <div class="col-6 col-sm-5 col-md-4 col-lg-3 p-0">
+                                                            <label for="exdate">Expiry Date</label>
+                                                            <div id="exdate" class="StripeElement-cards"></div>
+                                                        </div>
+                                                        <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+                                                            <label for="cvc">CVC Number</label>
+                                                            <div id="cvc" class="StripeElement-cards"></div>
+                                                            <div class="mb-3 text-danger" id="cvc-error" role="alert"></div>
+                                                        </div>
+                                                        <div class="col-12 p-0">
+                                                            <div class="text-danger" id="card-expiry-errors" role="alert"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-button text-right mt-3 mb-2 pr-3">                    
+                                                <a href="{% url 'view_bag' %}" class="adjust-bag">
+                                                    <strong><i class="fas fa-chevron-left"></i> Adjust Bag</strong>
+                                                </a>
+                                                <button id="submit-button" class="checkout">Complete Order</button>
+                                                <p class="small text-danger my-0">
+                                                    <span class="icon"><i class="fas fa-exclamation-circle"></i></span>
+                                                    <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                                                </p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script src="{% static 'js/emailnews.js' %}"></script>
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'js/stripe_elements.js' %}"></script>
+{% endblock %}

@@ -175,7 +175,7 @@ User stories are presented for 3 different User types:
         * Total amount spent
 
 
-* Definition by **[SHOP](https://newirishlife.herokuapp.com/products/)** section - As a _First Visitor_, I want to see all listed products that [New Irish life](https://newirishlife.herokuapp.com) is offering with corresponding product categories:
+* Definition by **[SHOP](https://newirishlife.herokuapp.com/products/)** section - As a _First Visitor_, I want to see all listed products that **[New Irish life](https://newirishlife.herokuapp.com)** is offering with corresponding product categories:
     * Users can quickly browse through the **[SHOP](https://newirishlife.herokuapp.com/products/)** section and view products and products categories.
     * Users can select one of five categories from the categories menu and browse only that type of product.
     * Users can sort all products by the following queries with a sort _dropdown menu_.
@@ -348,14 +348,14 @@ User stories are presented for 3 different User types:
 **18.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
 
 ### Wireframes
-* **[HOME](https://newirishlife.herokuapp.com/)** section general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)
-* **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, and **[LIFE](https://newirishlife.herokuapp.com/life)** sections general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Trip.png)
-* **[TRIP GOOGLE MAPS](https://newirishlife.herokuapp.com/trip)** section general idea - for Large and Small screens devices ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Google_Maps.png)
-* **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Signup.png)
-* **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Login.png)
-* **[SHOP](https://newirishlife.herokuapp.com/products/)** section general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Shop.png)
-* **[PRODUCT DETAIL](https://newirishlife.herokuapp.com/products/11/)** section general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Product_Detail.png)
-* **[BAG](https://newirishlife.herokuapp.com/bag/)** section general idea - for Large and Small screens devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Bag.png)
-* **FOOTER** section general idea - for Small devices - ![View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W3_Footer.png)
+* **[HOME](https://newirishlife.herokuapp.com/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)
+* **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, and **[LIFE](https://newirishlife.herokuapp.com/life)** sections general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Trip.png)
+* **[TRIP GOOGLE MAPS](https://newirishlife.herokuapp.com/trip)** section general idea - for Large and Small screens devices [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Google_Maps.png)
+* **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Signup.png)
+* **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Login.png)
+* **[SHOP](https://newirishlife.herokuapp.com/products/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Shop.png)
+* **[PRODUCT DETAIL](https://newirishlife.herokuapp.com/products/11/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Product_Detail.png)
+* **[BAG](https://newirishlife.herokuapp.com/bag/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Bag.png)
+* **FOOTER** section general idea - for Small devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W3_Footer.png)
 
 ****

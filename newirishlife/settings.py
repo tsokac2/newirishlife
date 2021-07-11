@@ -44,7 +44,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'newIrishLife.urls'
+ROOT_URLCONF = 'newirishlife.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -90,7 +90,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/"
 
-WSGI_APPLICATION = 'newIrishLife.wsgi.application'
+WSGI_APPLICATION = 'newirishlife.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {

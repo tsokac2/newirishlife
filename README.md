@@ -1,4 +1,4 @@
-<h1 align="center">[New Irish Life](https://newirishlife.herokuapp.com/)</h1>
+<h1 align="center"><a>https://newirishlife.herokuapp.com/</a></h1>
 
 Web-based travel guide for providing correct information for a fresh start on Irish grounds.
 Finding work, a place to stay, where to buy good cheap food in Ireland. 
@@ -348,7 +348,7 @@ User stories are presented for 3 different User types:
 **18.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
 
 ### Wireframes
-* **[HOME](https://newirishlife.herokuapp.com/)** section general idea - for Large and Small screens devices - [View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)
+* **[HOME](https://newirishlife.herokuapp.com/)** section general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)**
 * **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, and **[LIFE](https://newirishlife.herokuapp.com/life)** sections general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Trip.png)**
 * **[TRIP GOOGLE MAPS](https://newirishlife.herokuapp.com/trip)** section general idea - for Large and Small screens devices **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Google_Maps.png)**
 * **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Signup.png)**

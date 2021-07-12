@@ -18,7 +18,7 @@ advice, and planning this task can be made a lot easier.
     * [Work](#WORK)
     * [Life](#LIFE)
     * [Tips](#TIPS)
-    * [Sign Up](#SIGN-UP)
+    * [Signup](#SIGNUP)
     * [Login](#LOGIN)
     * [Profile](#PROFILE)
     * [Add Tip](#ADD-TIP)
@@ -757,5 +757,88 @@ Only test cases listed under High-Level Test Cases will be performed as part of 
 
 ### Test Results
 All processed tests and results are described in detail **[HERE](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md)**
+
+****
+
+# DEPLOYMENT
+
+**[PROJECT LINK](https://newirishlife.herokuapp.com/)**
+
+### LOCAL PROJECT SETUP:
+* Create a new repository on **[GitHub](https://github.com)**
+* Create a project folder on the local device
+* Start **[CMD](https://en.wikipedia.org/wiki/Cmd.exe)** on the local device and navigate to the root folder of the project
+* Initialize project root folder with the following CMD command: `git init`
+* Create _README.MD_ file with CMD command: `echo #New Irish Life > README.md`
+* Initiate `git add .` command in CMD project root folder
+* Initiate commit `git commit -m "Test first commit"` command in CMD project root folder
+* Create a connection with the local device and GitHub repository with the CMD command 
+  ```
+  git remote add origin https://github.com/username/project_repo_name.git
+  ```
+* Initiate push command `git push -u origin master`
+* Make regular commits after every project change with proper commit message more info in **[Git Commit Message](https://chris.beams.io/posts/git-commit/#separate)**
+* Use `git push` command in CMD for code commits 
+
+## DEPLOYMENT TO HEROKU
+### Create application:
+**1.** Navigate to **[HEROKU](https://id.heroku.com/login)** and log in
+
+**2.** Click on the _New_ button
+
+**3.** Select create a _New App_
+
+**4.** Enter the app name
+
+**5.** Select region
+
+### Configure connection to Github Repository
+**1.** Click the **_Deploy_** tab and select **_GitHub - Connect to GitHub_**
+
+**2.** Select GitHub
+
+**3.** Enter the repository name for the project and click search
+
+**4.** When repo has been found, click the _connect_ button
+
+### Set environment variables:
+* Click the **_Settings_** tab and then click the **_Reveal Config Vars_** button and add the following:
+
+    **1.** AWS_ACCESS_KEY_ID
+
+    **2.** AWS_SECRET_ACCESS_KEY
+
+    **3.** DATABASE_URL
+
+    **4.** EMAIL_HOST_PASS
+
+    **5.** EMAIL_HOST_USER
+
+    **6.** SECRET_KEY - **[Random Key Generator](https://randomkeygen.com/)**
+
+    **7.** STRIPE_PUBLIC_KEY
+
+    **8.** STRIPE_PUBLIC_KEY
+
+    **10.** STRIPE_WH_SECRET
+
+    **11.** USE_AWS
+
+### Enable automatic deployment:
+**1.** Select _Deploy_ tab and click _Enable Automation Deploys_
+
+**2.** Click the _Deploy_ button
+
+**3.** When the app is created check the logs for deployment errors, if none, click the _"View"_ button
+
+### LOCAL HOSTING
+**Note:** The project will not run locally unless the user sets up a _SECRET-KEY_ with **[Random Key Generator](https://randomkeygen.com/)**
+
+**_These details are private and not disclosed in this repository for security purposes._**
+
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages: pip install -r requirements.txt.
+
+To run a local Django server run the following command in CMD:
+`python manage.py runserver`
 
 ****

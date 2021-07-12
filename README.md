@@ -128,6 +128,8 @@ User stories are presented for 3 different User types:
     * Users can quickly decide for best mobile network providers regarding broadband speed, bill pay offers, TV broadband offers.
     * Users can check the four largest grocery shop chains with previous user reviews, best deals, work offerings.
 
+**[Back to content](#contents)**
+
 * Definition by **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section -  I want to easily login with my _email-or-username_ or and _password_ and be redirected to the HOME page with an updated menu with access to the **Profile** page and success login message:
     * If the user is not registered there is a **["Create profile"](https://newirishlife.herokuapp.com/accounts/signup/)** link for the registration process form. 
     * If the user forgot login credentials she/he can reset the password with the **["Forget Password?"](https://newirishlife.herokuapp.com/accounts/password/reset/)** link.
@@ -148,6 +150,8 @@ User stories are presented for 3 different User types:
         Password (again) |
    
     * The **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section contains quick _"cards"_ overview of the site and short introduction paragraph and a _"HERO"_ image gallery.
+
+**[Back to content](#contents)**
 
 * Definition by **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)**  section - On my **Profile** page I want to have the option to **UPDATE** my profile details, **LOGOUT** from my profile and **DELETE** my profile:
     * User ![Profile Details]( wireframe image ) are listed in the following order:
@@ -177,6 +181,7 @@ User stories are presented for 3 different User types:
         * Order Items
         * Total amount spent
 
+**[Back to content](#contents)**
 
 * Definition by **[SHOP](https://newirishlife.herokuapp.com/products/)** section - As a _First Visitor_, I want to see all listed products that **[New Irish life](https://newirishlife.herokuapp.com)** is offering with corresponding product categories:
     * Users can quickly browse through the **[SHOP](https://newirishlife.herokuapp.com/products/)** section and view products and products categories.
@@ -208,6 +213,7 @@ User stories are presented for 3 different User types:
     * Users can completely remove the item from shopping **[BAG](https://newirishlife.herokuapp.com/bag/)** by pressing red **"X"** in the top right corner of the item details card.
     * Users have the option to **"Keep Shopping"** or to **"Checkout"** requested items from shopping **[BAG](https://newirishlife.herokuapp.com/bag/)**. 
 
+**[Back to content](#contents)**
 
 * Definition by **CHECKOUT** section - As a _First Visitor_, I want to **CHECKOUT** securely with my valid credit card:
     * For the successful CHECKOUT process user must enter the following details:
@@ -252,6 +258,7 @@ User stories are presented for 3 different User types:
     Expiry Date: any valid date ex. **02/25** |
     CVC Number: any 3 digits number ex. **555** |
 
+**[Back to content](#contents)**
 
 * Definition by **CHECKOUT SUCCESS** section - As a _First Visitor_, I want to see all order details with **_"Checkout success message"_**:
     * If the checkout process was successful user will receive an email Confirmation for Order Number - ![Email example](wireframe link).
@@ -296,6 +303,8 @@ User stories are presented for 3 different User types:
     * Superusers will receive form validation errors if inputs fields are not valid.
     * If the **"EDIT"** process is completed successfully, the superuser will be redirected to the _edited product_ detail page to review product updates.
     * Superuser has an option to **"DELETE"** product with the **_"Are you sure you want to delete product?_"** confirmation option.
+
+**[Back to content](#contents)**
 
 ### Design process
 
@@ -350,6 +359,8 @@ User stories are presented for 3 different User types:
 
 **18.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
 
+**[Back to content](#contents)**
+
 ### Wireframes
 * **[HOME](https://newirishlife.herokuapp.com/)** section general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)**
 * **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, and **[LIFE](https://newirishlife.herokuapp.com/life)** sections general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Trip.png)**
@@ -360,6 +371,8 @@ User stories are presented for 3 different User types:
 * **[PRODUCT DETAIL](https://newirishlife.herokuapp.com/products/11/)** section general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Product_Detail.png)**
 * **[BAG](https://newirishlife.herokuapp.com/bag/)** section general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Bag.png)**
 * **FOOTER** section general idea - for Small devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W3_Footer.png)**
+
+**[Back to content](#contents)**
 
 ****
 
@@ -403,6 +416,8 @@ Formatted in three main sub-sections:
 * **_MOBILE NETWORKS_** Mobile/internet networks providers.
 * **_GROCERY SHOPS_** Irish Top food chains for grocery shopping.
 
+**[Back to content](#contents)**
+
 ## LOGIN
 Section with the option to **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** to a user profile for full website management.
 
@@ -420,6 +435,8 @@ Formatted in three main sub-sections:
 * Call-to-action link: **_"Already have an account? [Login](https://newirishlife.herokuapp.com/accounts/login/)"_**.
 * Overview of the website purpose displayed in four cards - **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**.
 * Introduction of web page purpose and what value it is bringing to an end-user.
+
+**[Back to content](#contents)**
 
 ## PROFILE
 Section for Active User profile details and shipping details.
@@ -470,6 +487,8 @@ Formatted in four main profile sections:
     * **["Keep Shopping"](https://newirishlife.herokuapp.com/products/)**
     * "Add To Bag"(action link)
 * Product description section.
+
+**[Back to content](#contents)**
 
 ## BAG
 A section review and start **"Checkout"** process for requested items.
@@ -530,6 +549,9 @@ Expansion plan:
 * Offer **_" Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
 * Create an email alert for admin and a friendly auto reminder for a user in case the user didn't finish the **_"Checkout/Payment"_** process.
 
+
+**[Back to content](#contents)**
+
 ****
 
 # TECHNOLOGIES USED
@@ -571,6 +593,8 @@ Expansion plan:
   * **SASS RESPONSIVE Mixins** function **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/sass_03.png)**
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
+**[Back to content](#contents)**
+
 ## # [NODE.JS](https://nodejs.org/en/)
 * Use for NPM `package.json` file implemetation in to project root
 
@@ -605,6 +629,8 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 **FULL SOURCE CODE:** for jQuery Cards DOM Events **[cards.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js)**
 
+**[Back to content](#contents)**
+
 ## # [BOOTSTRAP v4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * Bootstrap was used to assist with the responsiveness and styling of the website
 * Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
@@ -620,6 +646,8 @@ Stripe's software and APIs online payments provider.
 
 ## # [AWS S3](https://aws.amazon.com/s3/)
 Amazon Simple Storage Service (Amazon S3) object storage service.
+
+**[Back to content](#contents)**
 
 ## # [EMAILJS](https://dashboard.emailjs.com/sign-in)
 **IMPLEMENTATION**
@@ -665,6 +693,8 @@ Amazon Simple Storage Service (Amazon S3) object storage service.
 * To submit user data to the server we are declaring `send()` function in variable `var send = function(){...};` and calling that function when submit `<button>` is triggered - **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **60 - 76**
 
 * Validation tests are covered in **[TESTING.MD](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md)** file
+
+**[Back to content](#contents)**
 
 ## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
 * Google Fonts - **[Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)**
@@ -728,6 +758,8 @@ Amazon Simple Storage Service (Amazon S3) object storage service.
 ## # [AM I Responsive?](http://ami.responsivedesign.is/)
 * Multi-Device Website Mockup Generator was used to create the project Mockup image
 
+**[Back to content](#contents)**
+
 ****
 
 # TESTING
@@ -761,6 +793,8 @@ Only test cases listed under High-Level Test Cases will be performed as part of 
 ### Test Results
 All processed tests and results are described in detail **[HERE](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md)**
 
+**[Back to content](#contents)**
+
 ****
 
 # DEPLOYMENT
@@ -782,6 +816,8 @@ All processed tests and results are described in detail **[HERE](https://github.
 * Initiate push command `git push -u origin master`
 * Make regular commits after every project change with proper commit message more info in **[Git Commit Message](https://chris.beams.io/posts/git-commit/#separate)**
 * Use `git push` command in CMD for code commits 
+
+**[Back to content](#contents)**
 
 ## DEPLOYMENT TO HEROKU
 ### Create application:
@@ -844,6 +880,8 @@ Once the project has been loaded into an IDE of choice, run the following comman
 To run a local Django server run the following command in CMD:
 `python manage.py runserver`
 
+**[Back to content](#contents)**
+
 ****
 
 # CREDITS
@@ -869,5 +907,7 @@ To run a local Django server run the following command in CMD:
 
 ### ACKNOWLEDGEMENTS
 * **Anna Villanueva** for always fun and informative mentorship sessions.
+
+**[Back to content](#contents)**
 
 ****

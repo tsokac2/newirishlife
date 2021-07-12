@@ -53,6 +53,7 @@ User stories are presented for 3 different User types:
 * **Active User**
 * **Superuser**
 
+[Back to content](#contents)
 
 ### First Visitor
 * As a new Irish resident, I want all **NECESSARY AND IMPORTANT** information for my **[New Irish Life](https://newirishlife.herokuapp.com/)** in one place and available from any device connected to the internet, so I can organize my life in a fun and simple way.
@@ -95,6 +96,8 @@ User stories are presented for 3 different User types:
 * As a Superuser I want to have the ability to upload a new product for the **[SHOP](https://newirishlife.herokuapp.com/products/)** section with success confirmation messages. 
 * As a Superuser I want to have direct links displayed for _Edit_ and _Delete_ products on the products detail page.
 * As a Superuser I want to have the ability to **Delete** existing products with a confirmation message.
+
+[Back to content](#contents)
 
 ### Testing User Stories from User Experience (UX)
 * **MAIN MENU** - As a _First Visitor_, I want to easily understand the main menu and links for different website sections:
@@ -840,5 +843,31 @@ Once the project has been loaded into an IDE of choice, run the following comman
 
 To run a local Django server run the following command in CMD:
 `python manage.py runserver`
+
+****
+
+# CREDITS
+* Intro pitch - **[*"The Hobbit: An Unexpected Journey"*](https://en.wikipedia.org/wiki/The_Hobbit_(film_series))**
+* Website images source - **[CARROLLS IRISH GIFTS](https://www.carrollsirishgifts.com/)**
+* Website images source - **[UNSPLASH](https://unsplash.com/s/photos/smartphone)**
+* Website images source - **[PIXABAY](https://pixabay.com/photos)**
+  * **[User: wiredsmartio](https://pixabay.com/users/wiredsmartio-14931632/)**
+  * **[User: geralt](https://pixabay.com/users/geralt-9301/)**
+  * **[User: ds_30](https://pixabay.com/users/ds_30-1795490/)**
+  * **[User: pexels](https://pixabay.com/users/pexels-2286921/)**
+  * **[User: firmbee](https://pixabay.com/users/firmbee-663163/)**
+  * **[User: wokandapix](https://pixabay.com/users/wokandapix-614097/)**
+  * **[User: publicco](https://pixabay.com/users/publicco-5009832/)**
+
+* Home page icons - [Flaticon](https://www.flaticon.com/)
+
+### CODE
+* **[Bootstrap Carousel Fade Effect](https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/)**
+* **[Resizing Google Maps markers](https://stackoverflow.com/questions/15096461/resize-google-maps-marker-icon-image)**
+* **[Jasmine-jQuery: Set of jQuery helpers](https://bowercdn.net/c/jasmine-jquery-2.1.1/lib/jasmine-jquery.js)**
+* Project was developed by following the Code Institute video course **'Boutique Ado'**.
+
+### ACKNOWLEDGEMENTS
+* **Anna Villanueva** for always fun and informative mentorship sessions.
 
 ****

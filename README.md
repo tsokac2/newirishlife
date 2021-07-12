@@ -607,7 +607,7 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 * Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
 
 ## # [PYTHON DJANGO](https://www.djangoproject.com/)
-Python Modules Full list in **[requirements.txt]()**
+Python Modules Full list in **[requirements.txt](https://github.com/tsokac2/newirishlife/blob/main/requirements.txt)**
 
 ## # [POSTGRESQL](https://www.postgresql.org/)
 PostgreSQ open source object-relational database system.
@@ -661,12 +661,12 @@ Amazon Simple Storage Service (Amazon S3) object storage service.
 
 * To submit user data to the server we are declaring `send()` function in variable `var send = function(){...};` and calling that function when submit `<button>` is triggered - **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **60 - 76**
 
-* Validation tests are covered in **[TESTING.MD]()** file
+* Validation tests are covered in **[TESTING.MD](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md)** file
 
 ## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
-* Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
-* Google Fonts - [Lato](https://fonts.google.com/?preview.text=&preview.text_type=custom&query=LATO)
-* Google Fonts - [Josefin](https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom)
+* Google Fonts - **[Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)**
+* Google Fonts - **[Lato](https://fonts.google.com/?preview.text=&preview.text_type=custom&query=LATO)**
+* Google Fonts - **[Josefin](https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom)**
 
 **GOOGLE API IMPLEMENTATION STEPS:**
   * Pick Google Maps product **[More info](https://developers.google.com/maps/gmp-get-started#quickstart)**
@@ -674,7 +674,7 @@ Amazon Simple Storage Service (Amazon S3) object storage service.
   * Set up a billing account.
   * Enable APIs associated with the products you picked.
   * Create an API key-  documentation source - **[API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)**
-  * API keys for frontend-only applications cannot be hidden like is stated on the following link [Hide API Keys](https://gist.github.com/derzorngottes/3b57edc1f996dddcab25), developers **[Comment](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/API_Secure.png)**
+  * API keys for frontend-only applications cannot be hidden like is stated on the following link **[Hide API Keys](https://gist.github.com/derzorngottes/3b57edc1f996dddcab25)**, developers **[Comment](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/API_Secure.png)**
 
 **SCRIPTS INTEGRATION:**
   * In `<head>` element place `<scripts>` in following order:
@@ -699,7 +699,7 @@ Amazon Simple Storage Service (Amazon S3) object storage service.
 * Cloud platform service used for hosting a "live" version of the project
 
 ## # [JASMINE BEHAVIOR-DRIVEN JavaScript](https://jasmine.github.io)
-* Full testing and implementation process described in [TESTING.MD](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md) file 
+* Full testing and implementation process described in **[TESTING.MD](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md)** file 
 
 ## # [FONTAWESOME](https://fontawesome.com/) 
 * Use mostly for menu items and across projects elements
@@ -741,7 +741,7 @@ Amazon Simple Storage Service (Amazon S3) object storage service.
 
 ### Test Cases and Description
 
-![Test Cases](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/Test_Cases.jpg)
+![Test Cases](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/Test_Cases.JPG)
 
 ### Access Requirements
 The tester must be a Superuser to have access to the Django admin console to test the full functionality of the application.

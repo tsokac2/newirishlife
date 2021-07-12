@@ -186,9 +186,9 @@ Behavior-driven development framework for testing JavaScript code.
 * `$('#showLinks1').trigger('click');`                      - triggering DOM event
 * `expect(spyEventShow).toHaveBeenTriggered();`             - including `spyEventShow` variable in to `.toHaveBeenTriggered()` test instance
 
-**FULL SOURCE CODE:** - **[Jasmine - cardsSpec.js]()**
+**FULL SOURCE CODE:** - **[Jasmine - cardsSpec.js](https://github.com/tsokac2/newirishlife/blob/main/static/testing/spec/cardsSpec.js)**
 
-**Live Version** - **[Cards Test]()**
+**Live Version** - **[Cards Test](https://tsokac2.github.io/newirishlife/static/testing/cardstest.html)**
 
 #### Testing Validation Functions for EMAILJS API Newsletter services
 
@@ -239,9 +239,9 @@ Behavior-driven development framework for testing JavaScript code.
   });
   ```
 
-**FULL SOURCE CODE:** - **[Jasmine - emailnewsSpec.js]()**
+**FULL SOURCE CODE:** - **[Jasmine - emailnewsSpec.js](https://github.com/tsokac2/newirishlife/blob/main/static/testing/spec/emailnewsSpec.js)**
 
-**Live Version** - **[Emailnews Test]()**
+**Live Version** - **[Emailnews Test](https://tsokac2.github.io/newirishlife/static/testing/emailnewstest.html)**
 
 ****
 

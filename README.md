@@ -514,8 +514,8 @@ Formatted in 4 sections:
 * Credits with developer **[website link](http://www.tomislavsokac.com/home)**.
 
 ## CROS-PROJECT FEATURES
-* Alert messages for action confirmation regarding call-to-action purposes **![View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/messages_overview.png)**.
-* **_Quick Links..._** Quick link option for precise user search in specified link area - **![View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks.png)**.
+* Alert messages for action confirmation regarding call-to-action purposes **[View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/messages_overview.png)**.
+* **_Quick Links..._** Quick link option for precise user search in specified link area - **[View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks.png)**.
 * Image slide-show representation section elements.
 * Welcoming **[HOME](https://newirishlife.herokuapp.com/) _"HERO"_** section; **[HOME](https://newirishlife.herokuapp.com/)** image composition section followed with four cards with **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**, and **[SHOP](https://newirishlife.herokuapp.com/products/)** headings is replicated through the website.
 
@@ -526,3 +526,236 @@ Expansion plan:
 * Implement section regarding social events and gathering for necessary user connection expansion.
 * Offer **_" Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
 * Create an email alert for admin and a friendly auto reminder for a user in case the user didn't finish the **_"Checkout/Payment"_** process.
+
+****
+
+# TECHNOLOGIES USED
+
+## # [HTML](https://en.wikipedia.org/wiki/HTML)
+**Semantic elements**: _nav_, _section_, _footer_, _div_(content division element), _span_(inline container), _i_ (text element).
+
+## # [CSS3](https://en.wikipedia.org/wiki/CSS)
+**Modules:** Borders, Background and text-effects, Flexible Box Layout, CSS Grid Layout, CSS Transitions, CSS Image Values & Replaced Content, CSS Values & Units.
+
+## # [SASS PRE-PROCESSOR](https://sass-lang.com/)
+**TOOLS INCLUDED:**
+* SASS interpolation
+* SASS Mixings - Responsive layout functions
+* SASS Variables
+* SASS Nesting
+* SASS Compiler
+
+**COMPILER IMPLEMENTATION:**
+* Open Command Prompt
+* Navigate to the root project folder
+* Enter commands in the following order:
+  * `npm init --yes` - **PRESS ENTER**
+  * `npm i -g node-sass` - **PRESS ENTER**
+  * In `{} package.json` file under the `"scripts"` type the **[FOLLOWING](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/sass_01.png)**
+* To start **SASS Compiler** enter the following command: `npm run watch` - **PRESS ENTER**
+* If no errors the compilation process _NPM SERVER_ will start with the following console log message:
+    ```
+    > new@1.0.0 watch C:\Users\Tomislav\Desktop\new
+    > node-sass -o assets/css assets/scss/index.scss -w
+    ```
+**SASS IMPLEMENTATION AND FOLDER STRUCTURE**
+* Create the following folder structure:
+  * assets/scss/abstracts - global SASS **variables** and **mixins** function
+  * assets/scss/base - global styles for html, body and special helper classes
+  * assets/scss/components - carousel image slideshow, small screen navigation menu
+  * assets/scss/layout - styling for _HOME_, _TRIP_, _WORK_, _LIFE_, _TIPS_, _SIGN UP_, _LOGIN_
+  * assets/scss/_index.scss - referencing all `*.scss` files in folder structure, **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/sass_02.png)**
+  * **SASS RESPONSIVE Mixins** function **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/sass_03.png)**
+* All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
+
+## # [NODE.JS](https://nodejs.org/en/)
+* Use for NPM `package.json` file implemetation in to project root
+
+## # [NPM](https://www.npmjs.com/)
+* Package manager - Use package - `node-sass`
+
+## # [JAVASCRIPT](https://www.javascript.com/)
+Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
+
+## # [JQUERY](https://fonts.google.com/)
+**APPLIED jQuery DOM EVENTS** for highlighting **_"Quick Links"_** cards elements.
+
+**[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, and **[LIFE](https://newirishlife.herokuapp.com/life)** sections are containing **_Quick Links_** card elements.
+
+Every card element contains the _MAIN LINK_ source to the external services provider and a **_"Quick Links..."_** button element for loading detailed links when the user chose the services provider destination. **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks_life.png)**
+
+**_base.html_** template contains <div class="blur"> just after opening tag for the background _"fade-out"_ effect
+
+**jQuery DOM Events** used for above-mentioned cards element functionality:
+
+* Element with id **#showLinks1** was clicked
+* `var thisCardLinkShow = "." + this.id + "-grid";` checking for `<div>` element with class `.showLinks1-grid`
+* `$(thisCardLinkShow).show(300)` referring to `this` element to `.show()` with speed of 300 milliseconds
+* `$(".blur").fadeIn(400)` loading background "blur" effect with speed of 400 milliseconds
+* `$(thisCardLinkShow).addClass("rel-card");` adding class `.addClass("rel-card")` to element that is referring to `this` element
+* `$("#Card1").addClass("wrap-rel");`  adding class `.addClass("rel-card")` to element with id **Card1**
+
+The process is replicated for the `<button id="#hideLinks1">` element with the id of `#hideLinks1` for the "hiding" effect with `.removeClass("wrap-rel");` - **[SOURCE CODE](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js)** from lines **9 - 14** 
+
+If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that is achieved with following `.click()` DOM effect on `<div class="blur>`.
+`.blur` element contains absolute position properties with a z-index of 1000: **[SOURCE CODE](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js)** from lines **34 - 38** 
+
+**FULL SOURCE CODE:** for jQuery Cards DOM Events **[cards.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js)**
+
+## # [BOOTSTRAP v4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+* Bootstrap was used to assist with the responsiveness and styling of the website
+* Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
+
+## # [PYTHON DJANGO](https://www.djangoproject.com/)
+Python Modules Full list in **[requirements.txt]()**
+
+## # [POSTGRESQL](https://www.postgresql.org/)
+PostgreSQ open source object-relational database system.
+
+## # [STRIPE](https://stripe.com/ie)
+Stripe's software and APIs online payments provider.
+
+## # [AWS S3](https://aws.amazon.com/s3/)
+Amazon Simple Storage Service (Amazon S3) object storage service.
+
+## # [EMAILJS](https://dashboard.emailjs.com/sign-in)
+**IMPLEMENTATION**
+* Add New Service - Gmail
+* Email Templates - Create New Template
+* Use following syntax for form attributes, syntax {{form_name}}
+* SENT Email content from a user
+* Select the Auto-Reply option and place the following: **_SUBJECT**: On behalf of all of us from New Irish Life, welcome onboard!_
+* **WELCOMING** **[Email](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email.png)** content sent to the user after successful submission
+
+**SCRIPTS INTEGRATION:**
+ * Before closing **`<head>`** element place following **CDN** script tag:
+    * `<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>`
+  * Place following call-back function after **CDN** link
+
+  ```
+  <script type="text/javascript">
+        (function() {
+        emailjs.init("user_hI6S08d1aK1XKKU2VWtOI");
+        })();
+  </script>
+  ```
+  * Check `User ID` under "Integration" option on EmailJS dashboard
+  * Create `sendEmail` function **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **88 - 103** 
+
+**FROM VALIDATION DEVELOPMENT**
+* Create **[EventTarget](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target, in this case `newsletter()` function - **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **1 - 3** 
+*  Create 2 validation function for UX purposes, `validateName()` and `validateEmail()` function.
+* `validateName()` function is _**returning**_ Boolean value `true` or `false` that is stored in empty variable `var valid;` depending of a user input string value - **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **5 - 22**
+* Implement call-back functions regarding what kind of input value was submitted by a user.
+* `pushSuccessFor()` function is adding a `.success` class to the input element when user input is valid - **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **55 - 58**
+* User email validation is stored in the `validateEmail()` function with a call-back function that is checking user email - **[SOURCE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)**
+* To get a valid email id we use a regular expression
+* Regular Expression Pattern : `/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/`
+* `testEmail()` function:
+
+  ```
+    function testEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    };
+  ```
+
+* To submit user data to the server we are declaring `send()` function in variable `var send = function(){...};` and calling that function when submit `<button>` is triggered - **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** from lines **60 - 76**
+
+* Validation tests are covered in **[TESTING.MD]()** file
+
+## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
+* Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
+* Google Fonts - [Lato](https://fonts.google.com/?preview.text=&preview.text_type=custom&query=LATO)
+* Google Fonts - [Josefin](https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom)
+
+**GOOGLE API IMPLEMENTATION STEPS:**
+  * Pick Google Maps product **[More info](https://developers.google.com/maps/gmp-get-started#quickstart)**
+  * Create a project.
+  * Set up a billing account.
+  * Enable APIs associated with the products you picked.
+  * Create an API key-  documentation source - **[API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)**
+  * API keys for frontend-only applications cannot be hidden like is stated on the following link [Hide API Keys](https://gist.github.com/derzorngottes/3b57edc1f996dddcab25), developers **[Comment](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/API_Secure.png)**
+
+**SCRIPTS INTEGRATION:**
+  * In `<head>` element place `<scripts>` in following order:
+
+    ```
+    <script src="assets/js/markerclusterer_compiled.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key="YOUR API KEY"&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+    ```
+  * Create `<div>` element with ID `<div id="map">` render map place
+  * Marker Cluster CDN - **[SOURCE](https://cdnjs.com/libraries/js-marker-clusterer)**
+  * Creating call-back function in `<script src="assets/js/maps.js"></script>` -  **[CODE EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js)** from lines **1 - 36** 
+
+* `function initMap() {..}` maps location on a major scale in this case Dublin, Ireland
+* `google.maps.event.addDomListener(window, "resize", function() {...}` adding Google Maps DOM listener
+* `let busMarkerIcon = {...}` creating custom map marker with `scaledSize` property
+* `const Bus747Stop = new google.maps.Marker({...});` pointing to Bus Stop for 747 Dublin Bus line for Dublin Airport
+
+**FULL SOURCE CODE:** GOOGLE MAPS API **[maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js)**
+
+## # [HEROKU](https://www.heroku.com)
+* Cloud platform service used for hosting a "live" version of the project
+
+## # [JASMINE BEHAVIOR-DRIVEN JavaScript](https://jasmine.github.io)
+* Full testing and implementation process described in [TESTING.MD](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md) file 
+
+## # [FONTAWESOME](https://fontawesome.com/) 
+* Use mostly for menu items and across projects elements
+
+## # [GIT](https://git-scm.com/)
+* Distributed version control system
+
+## # [GITHUB](https://github.com/)
+* Project files hosting platform
+
+## # [IDE Visual Studio Code](https://code.visualstudio.com/)
+* Project code editor 
+
+## # [ADOBE PHOTOSHOP](https://www.adobe.com/)
+* Images preparation - Logo Design
+
+## # [ADOBE ILLUSTRATOR](https://www.adobe.com/)
+* Logo Design 
+
+## # [BALSAMIQ WIREFRAMES](https://balsamiq.com/) 
+* Wireframes Design
+
+## # [AM I Responsive?](http://ami.responsivedesign.is/)
+* Multi-Device Website Mockup Generator was used to create the project Mockup image
+
+****
+
+# TESTING
+
+### Strategy and planning
+* Testing is required on all features and user stories documented in this README file.
+* All clickable links must redirect to the correct pages and sections.
+* HTML Code must pass through the **[W3C HTML Validator](https://validator.w3.org/#validate_by_uri)**.
+* CSS Code must pass through the **[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)**.
+* JavaScript code must pass through the **[JSHint Validator](https://jshint.com/)**.
+* Python Code must pass through **[PEP8 Validator](http://pep8online.com/)**.
+* Testing through **[Django Unit Testing Framework](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/)**.
+
+
+### Test Cases and Description
+
+![Test Cases](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/Test_Cases.jpg)
+
+### Access Requirements
+The tester must be a Superuser to have access to the Django admin console to test the full functionality of the application.
+
+### Regression Testing
+All features previously tested during development in a local environment must be regression tested in production on the live website.
+
+### Assumptions and Dependencies
+Testing is dependent on the website being deployed live on Heroku.
+
+### Out of Scope
+Only test cases listed under High-Level Test Cases will be performed as part of this testing effort.
+
+### Test Results
+All processed tests and results are described in detail **[HERE](https://github.com/tsokac2/newirishlife/blob/main/TESTING.md)**
+
+****

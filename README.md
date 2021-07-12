@@ -9,24 +9,24 @@ advice, and planning this task can be made a lot easier.
 ![Website Main Mockup](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Main.jpg)
 
 ## Contents
-* [User Experience Design (UX)](#UX)
-    * [User Story](#User-Story)
-    * [Design process](#Design-process)
-* [Features](#FEATURES)
-    * [Home](#HOME)
-    * [Trip](#TRIP)
-    * [Work](#WORK)
-    * [Life](#LIFE)
-    * [Tips](#TIPS)
-    * [Signup](#SIGNUP)
-    * [Login](#LOGIN)
-    * [Profile](#PROFILE)
-    * [Add Tip](#ADD-TIP)
+* **[User Experience Design (UX)](#UX)**
+    * **[User Story](#User-Story)**
+    * **[Design process](#Design-process)**
+* **[Features](#FEATURES)**
+    * **[Home](#HOME)**
+    * **[Trip](#TRIP)**
+    * **[Work](#WORK)**
+    * **[Life](#LIFE)**
+    * **[Tips](#TIPS)**
+    * **[Signup](#SIGNUP)**
+    * **[Login](#LOGIN)**
+    * **[Profile](#PROFILE)**
+    * **[Add Tip](#ADD-TIP)**
 
-* [Technologies used](#TECHNOLOGIES-USED)
-* [Testing](#TESTING)
-* [Deployment](#DEPLOYMENT)
-* [Credits](#Credits)
+* **[Technologies used](#TECHNOLOGIES-USED)**
+* **[Testing](#TESTING)**
+* **[Deployment](#DEPLOYMENT)**
+* **[Credits](#Credits)**
 
 ****
 

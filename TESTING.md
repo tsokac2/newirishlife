@@ -1,16 +1,16 @@
 ## Table of Contents
-* [Cloud-Based Validators](#Cloud-Based-Validators)
-    * [W3C HTML Validator](#W3C-HTML-Validator)
-    * [W3C CSS Validator](#W3C-CSS-Validator)
-    * [JSHint Validator](#JSHint-Validator)
-    * [PEP8 Validator](#PEP8-Validator)
-* [Test Cases Description and Results](#Test-Cases-Description-and-Results)
-* [Local Based Validators](#Local-Based-Validators)
-  * [Python Unit Testing Framework](#Python-Unit-Testing-Framework)
-  * [Jasmine](#Jasmine)
-* [W3 Validator Errors and Solutions](#W3-Validator-Errors-and-Solutions)
-* [Developer Tools Console Logs Errors and Solutions](#Developer-Tools-Console-Logs-Errors-and-Solutions)
-* [Testing WARNINGS](#Testing-WARNINGS)
+* **[Cloud-Based Validators](#Cloud-Based-Validators)**
+    * **[W3C HTML Validator](#W3C-HTML-Validator)**
+    * **[W3C CSS Validator](#W3C-CSS-Validator)**
+    * **[JSHint Validator](#JSHint-Validator)**
+    * **[PEP8 Validator](#PEP8-Validator)**
+* **[Test Cases Description and Results](#Test-Cases-Description-and-Results)**
+* **[Local Based Validators](#Local-Based-Validators)**
+  * **[Python Unit Testing Framework](#Python-Unit-Testing-Framework)**
+  * **[Jasmine](#Jasmine)**
+* **[W3 Validator Errors and Solutions](#W3-Validator-Errors-and-Solutions)**
+* **[Developer Tools Console Logs Errors and Solutions](#Developer-Tools-Console-Logs-Errors-and-Solutions)**
+* **[Testing WARNINGS](#Testing-WARNINGS)**
 
 ****
 
@@ -18,47 +18,47 @@
 
 ### [W3C HTML Validator](https://validator.w3.org/#validate_by_uri)
 
-* HTML **[HOME](https://newirishlife.herokuapp.com/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Home.JPG) - _No Errors_
-* HTML **[TRIP](https://newirishlife.herokuapp.com/trip)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Trip.JPG) - _No Errors_
-* HTML **[WORK](https://newirishlife.herokuapp.com/work)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Work.JPG) - _No Errors_
-* HTML **[LIFE](https://newirishlife.herokuapp.com/life)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Life.JPG) - _No Errors_
-* HTML **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Login.JPG) - _No Errors_
-* HTML **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Signup.JPG) - _No Errors_
-* HTML **[PASSWORD RESET](https://newirishlife.herokuapp.com/accounts/password/reset/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset.JPG) - _No Errors_
-* HTML **[PASSWORD RESET DONE](https://newirishlife.herokuapp.com/accounts/password/reset/done/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset_done.JPG) - _No Errors_
-* HTML **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Pofile.JPG) - _No Errors_
-* HTML **[SHOP](https://newirishlife.herokuapp.com/products/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Shop.JPG) - _No Errors_
+* HTML **[HOME](https://newirishlife.herokuapp.com/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Home.JPG)** - _No Errors_
+* HTML **[TRIP](https://newirishlife.herokuapp.com/trip)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Trip.JPG)** - _No Errors_
+* HTML **[WORK](https://newirishlife.herokuapp.com/work)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Work.JPG)** - _No Errors_
+* HTML **[LIFE](https://newirishlife.herokuapp.com/life)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Life.JPG)** - _No Errors_
+* HTML **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Login.JPG)** - _No Errors_
+* HTML **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Signup.JPG)** - _No Errors_
+* HTML **[PASSWORD RESET](https://newirishlife.herokuapp.com/accounts/password/reset/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset.JPG)** - _No Errors_
+* HTML **[PASSWORD RESET DONE](https://newirishlife.herokuapp.com/accounts/password/reset/done/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset_done.JPG)** - _No Errors_
+* HTML **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Pofile.JPG)** - _No Errors_
+* HTML **[SHOP](https://newirishlife.herokuapp.com/products/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Shop.JPG)** - _No Errors_
 * HTML **_INDIVIDUAL PRODUCT DETAILS_** page:
-    *  HTML **[PRODUCT 01](https://newirishlife.herokuapp.com/products/1/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_01.JPG) - _No Errors_
-    *  HTML **[PRODUCT 02](https://newirishlife.herokuapp.com/products/2/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_02.JPG) - _No Errors_
-    *  HTML **[PRODUCT 03](https://newirishlife.herokuapp.com/products/3/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_03.JPG) - _No Errors_
-    *  HTML **[PRODUCT 04](https://newirishlife.herokuapp.com/products/4/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_04.JPG) - _No Errors_
-    *  HTML **[PRODUCT 05](https://newirishlife.herokuapp.com/products/5/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_05.JPG) - _No Errors_
-    *  HTML **[PRODUCT 06](https://newirishlife.herokuapp.com/products/6/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_06.JPG) - _No Errors_
-    *  HTML **[PRODUCT 07](https://newirishlife.herokuapp.com/products/7/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_07.JPG) - _No Errors_
-    *  HTML **[PRODUCT 08](https://newirishlife.herokuapp.com/products/8/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_08.JPG) - _No Errors_
-    *  HTML **[PRODUCT 09](https://newirishlife.herokuapp.com/products/9/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_09.JPG) - _No Errors_
-    *  HTML **[PRODUCT 10](https://newirishlife.herokuapp.com/products/10/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_10.JPG) - _No Errors_
-    *  HTML **[PRODUCT 11](https://newirishlife.herokuapp.com/products/11/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_11.JPG) - _No Errors_
-    *  HTML **[PRODUCT 12](https://newirishlife.herokuapp.com/products/12/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_12.JPG) - _No Errors_
-    *  HTML **[PRODUCT 13](https://newirishlife.herokuapp.com/products/13/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_13.JPG) - _No Errors_
-    *  HTML **[PRODUCT 14](https://newirishlife.herokuapp.com/products/14/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_14.JPG) - _No Errors_
-    *  HTML **[PRODUCT 15](https://newirishlife.herokuapp.com/products/15/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_15.JPG) - _No Errors_
-    *  HTML **[PRODUCT 16](https://newirishlife.herokuapp.com/products/16/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_16.JPG) - _No Errors_
-    *  HTML **[PRODUCT 17](https://newirishlife.herokuapp.com/products/17/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_17.JPG) - _No Errors_
-    *  HTML **[PRODUCT 18](https://newirishlife.herokuapp.com/products/18/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_18.JPG) - _No Errors_
-    *  HTML **[PRODUCT 19](https://newirishlife.herokuapp.com/products/19/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_19.JPG) - _No Errors_
-    *  HTML **[PRODUCT 20](https://newirishlife.herokuapp.com/products/20/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_20.JPG) - _No Errors_
-* HTML **[BAG-NO-PRODUCTS](https://newirishlife.herokuapp.com/bag/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Bag_no_items.JPG) - _No Errors_
-* HTML **[BAG-ALL-PRODUCTS](https://newirishlife.herokuapp.com/bag/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Bag_All_items.JPG) - _No Errors_
-* HTML **[CHECKOUT-ALL-ITEMS](https://newirishlife.herokuapp.com/checkout/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_All_Items.JPG) - _No Errors_
-* HTML **[CHECKOUT SUCCESS](https://newirishlife.herokuapp.com/checkout/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_Success.JPG) - _No Errors_
+    *  HTML **[PRODUCT 01](https://newirishlife.herokuapp.com/products/1/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_01.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 02](https://newirishlife.herokuapp.com/products/2/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_02.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 03](https://newirishlife.herokuapp.com/products/3/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_03.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 04](https://newirishlife.herokuapp.com/products/4/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_04.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 05](https://newirishlife.herokuapp.com/products/5/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_05.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 06](https://newirishlife.herokuapp.com/products/6/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_06.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 07](https://newirishlife.herokuapp.com/products/7/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_07.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 08](https://newirishlife.herokuapp.com/products/8/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_08.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 09](https://newirishlife.herokuapp.com/products/9/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_09.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 10](https://newirishlife.herokuapp.com/products/10/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_10.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 11](https://newirishlife.herokuapp.com/products/11/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_11.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 12](https://newirishlife.herokuapp.com/products/12/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_12.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 13](https://newirishlife.herokuapp.com/products/13/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_13.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 14](https://newirishlife.herokuapp.com/products/14/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_14.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 15](https://newirishlife.herokuapp.com/products/15/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_15.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 16](https://newirishlife.herokuapp.com/products/16/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_16.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 17](https://newirishlife.herokuapp.com/products/17/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_17.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 18](https://newirishlife.herokuapp.com/products/18/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_18.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 19](https://newirishlife.herokuapp.com/products/19/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_19.JPG)** - _No Errors_
+    *  HTML **[PRODUCT 20](https://newirishlife.herokuapp.com/products/20/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_20.JPG)** - _No Errors_
+* HTML **[BAG-NO-PRODUCTS](https://newirishlife.herokuapp.com/bag/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Bag_no_items.JPG)** - _No Errors_
+* HTML **[BAG-ALL-PRODUCTS](https://newirishlife.herokuapp.com/bag/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Bag_All_items.JPG)** - _No Errors_
+* HTML **[CHECKOUT-ALL-ITEMS](https://newirishlife.herokuapp.com/checkout/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_All_Items.JPG)** - _No Errors_
+* HTML **[CHECKOUT SUCCESS](https://newirishlife.herokuapp.com/checkout/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_Success.JPG)** - _No Errors_
 
 ### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * CSS [index.css Result](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/CSS_W4_index_css.JPG) - No errors
 
 ### [JSHint Validator](https://jshint.com/)
-* JS [add_edit_product.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/add_edit_product.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_add_edit_products.JPG) - _Undefined variable `emailjs` is being used, this can also be ignored._
+* **JS [add_edit_product.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/add_edit_product.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_add_edit_products.JPG)** - _Undefined variable `emailjs` is being used, this can also be ignored._
 * JS [cards.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_cards.JPG) - _No Errors_
 * JS [emailnews.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_emailnews.JPG) - _No Errors_
 * JS [maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_maps.JPG) - _Undefined variable `google`, `busMarkerUrl`, `dartMarkerUrl`, `luasMarkerUrl`, is being used, this can also be ignored._
@@ -151,7 +151,7 @@ Full test results can be found in an excel document **[M4_TEST_CASES](https://gi
 * Test **[PROFILES APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/profiles/tests.py)**
 * Test **[TRIP APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/trip/tests.py)**
 * Test **[WORK APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/work/tests.py)**
-* **Command-line ![TEST RESULTS]()**
+* **Command-line ![TEST RESULTS](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/unit_test**.PNG)**
 
 
 ### [Jasmine](https://jasmine.github.io/)

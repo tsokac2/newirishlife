@@ -55,17 +55,17 @@
 * HTML **[CHECKOUT SUCCESS](https://newirishlife.herokuapp.com/checkout/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_Success.JPG)** - _No Errors_
 
 ### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-* CSS [index.css Result](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/CSS_W4_index_css.JPG) - No errors
+* **CSS [index.css Result](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/CSS_W4_index_css.JPG)** - No errors
 
 ### [JSHint Validator](https://jshint.com/)
 * **JS [add_edit_product.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/add_edit_product.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_add_edit_products.JPG)** - _Undefined variable `emailjs` is being used, this can also be ignored._
-* JS [cards.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_cards.JPG) - _No Errors_
-* JS [emailnews.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_emailnews.JPG) - _No Errors_
-* JS [maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_maps.JPG) - _Undefined variable `google`, `busMarkerUrl`, `dartMarkerUrl`, `luasMarkerUrl`, is being used, this can also be ignored._
-* JS [product_quantity_input.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/product_quantity_input.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_product_quantity.JPG) - _No Errors_
-* JS [sort.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/sort.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_sort.JPG) - _No Errors_
-* JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/stripe_elements.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe.JPG) - _No major errors. Arrow function warnings can be ignored and undefined variable Stripe is being used, this can also be ignored._
-* JS [toast.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/toast.js) - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_toast.JPG) - _No Errors_
+* **JS [cards.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/cards.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_cards.JPG)** - _No Errors_
+* **JS [emailnews.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/emailnews.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_emailnews.JPG)** - _No Errors_
+* **JS [maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_maps.JPG)** - _Undefined variable `google`, `busMarkerUrl`, `dartMarkerUrl`, `luasMarkerUrl`, is being used, this can also be ignored._
+* **JS [product_quantity_input.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/product_quantity_input.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_product_quantity.JPG)** - _No Errors_
+* **JS [sort.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/sort.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_sort.JPG)** - _No Errors_
+* **JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/stripe_elements.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe.JPG)** - _No major errors. Arrow function warnings can be ignored and undefined variable Stripe is being used, this can also be ignored._
+* **JS [toast.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/toast.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_toast.JPG)** - _No Errors_
 
 
 ### [PEP8 Validator](http://pep8online.com/)
@@ -151,7 +151,7 @@ Full test results can be found in an excel document **[M4_TEST_CASES](https://gi
 * Test **[PROFILES APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/profiles/tests.py)**
 * Test **[TRIP APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/trip/tests.py)**
 * Test **[WORK APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/work/tests.py)**
-* **Command-line ![TEST RESULTS](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/unit_test**.PNG)**
+* **Command-line [TEST RESULTS](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/unit_test.PNG)**
 
 
 ### [Jasmine](https://jasmine.github.io/)

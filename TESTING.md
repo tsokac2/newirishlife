@@ -27,7 +27,7 @@
 * HTML **[PASSWORD RESET](https://newirishlife.herokuapp.com/accounts/password/reset/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset.JPG) - _No Errors_
 * HTML **[PASSWORD RESET DONE](https://newirishlife.herokuapp.com/accounts/password/reset/done/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset_done.JPG) - _No Errors_
 * HTML **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Pofile.JPG) - _No Errors_
-* HTML **[SHOP](https://newirishlife.herokuapp.com/products/)** - ![TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Shop.JPG) - _No Errors_
+* HTML **[SHOP](https://newirishlife.herokuapp.com/products/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Shop.JPG) - _No Errors_
 * HTML **_INDIVIDUAL PRODUCT DETAILS_** page:
     *  HTML **[PRODUCT 01](https://newirishlife.herokuapp.com/products/1/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_01.JPG) - _No Errors_
     *  HTML **[PRODUCT 02](https://newirishlife.herokuapp.com/products/2/)** - [TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Product_details_02.JPG) - _No Errors_

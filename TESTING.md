@@ -1,4 +1,4 @@
-## Table of Contents
+## Contents
 * **[Cloud-Based Validators](#Cloud-Based-Validators)**
     * **[W3C HTML Validator](#W3C-HTML-Validator)**
     * **[W3C CSS Validator](#W3C-CSS-Validator)**
@@ -54,6 +54,10 @@
 * HTML **[CHECKOUT-ALL-ITEMS](https://newirishlife.herokuapp.com/checkout/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_All_Items.JPG)** - _No Errors_
 * HTML **[CHECKOUT SUCCESS](https://newirishlife.herokuapp.com/checkout/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_Success.JPG)** - _No Errors_
 
+
+**[Back to content](#contents)**
+
+
 ### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * **CSS [index.css Result](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/CSS_W4_index_css.JPG)** - No errors
 
@@ -66,6 +70,9 @@
 * **JS [sort.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/sort.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_sort.JPG)** - _No Errors_
 * **JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/stripe_elements.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe.JPG)** - _No major errors. Arrow function warnings can be ignored and undefined variable Stripe is being used, this can also be ignored._
 * **JS [toast.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/toast.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_toast.JPG)** - _No Errors_
+
+
+**[Back to content](#contents)**
 
 
 ### [PEP8 Validator](http://pep8online.com/)
@@ -131,6 +138,8 @@
     * **[urls.py](https://github.com/tsokac2/newirishlife/blob/main/newirishlife/urls.py)** - _No Errors_
     * **[wsgi.py](https://github.com/tsokac2/newirishlife/blob/main/newirishlife/wsgi.py)** - _No Errors_
 
+**[Back to content](#contents)**
+
 ****
 
 ## Test Cases Description and Results
@@ -153,6 +162,7 @@ Full test results can be found in an excel document **[M4_TEST_CASES](https://gi
 * Test **[WORK APP]()** - source code - **[tests.py](https://github.com/tsokac2/newirishlife/blob/main/work/tests.py)**
 * **Command-line [TEST RESULTS](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/unit_test.PNG)**
 
+**[Back to content](#contents)**
 
 ### [Jasmine](https://jasmine.github.io/)
 Behavior-driven development framework for testing JavaScript code.
@@ -243,6 +253,8 @@ Behavior-driven development framework for testing JavaScript code.
 
 **Live Version** - **[Emailnews Test](https://tsokac2.github.io/newirishlife/static/testing/emailnewstest.html)**
 
+**[Back to content](#contents)**
+
 ****
 
 ## W3 Validator Errors and Solutions
@@ -297,6 +309,8 @@ _Error_: `.section-home .intro-pitch .pitch-wrap .composition` Value Error : mar
 
 _SOLUTION_: Remove extra space in `margin-top:  2rem;` to `margin-top: 2rem;`
 
+**[Back to content](#contents)**
+
 ****
 
 ## Developer Tools Console Logs Errors and Solutions
@@ -335,8 +349,13 @@ The security of your Google Cloud Platform account(s) is important to us.
 Error:
 Heroku Deployment "400 Bad Request" - When making requests to your application that have responses with large cookie sizes, you get a 400 Bad Request response from the Heroku Router.
 
-[SOLUTION:](https://help.heroku.com/TQ80D553/why-do-i-get-a-400-bad-request-response-when-i-have-large-cookies)
+**SOLUTION:**
 
+_The Heroku router has an 8192 byte per line restriction for headers (described here). Cookies are sent in responses on a single line, so this translates into an 8192 byte limit on your overall cookie size in responses. This limit is widely used - for example, it's the default limit for popular HTTP servers such as Apache, Nginx, and Tomcat (search for maxHttpHeaderSize)._
+
+_AWS ELBs impose this limit as well, therefore the Heroku Router reflects the popular use of that limit along with the limitations imposed by other systems our routing layer relies on. The HTTP spec does not impose a limit like this, but almost all implementations impose one for practical and security reasons (e.g., to protect against DoS attacks using large cookies). As such, this limit is unlikely to change in the future and the only way to avoid this error is to reduce the size of the cookies sent in application responses._
+
+**[Back to content](#contents)**
 
 ## Testing WARNINGS
 
@@ -350,3 +369,5 @@ For testing product purchasing and ordering functionality use the following deta
 * **CARD NUMBER:** _4242 4242 4242 4242_
 * **DATE:** _05/25_
 * **CVC:** _555_
+
+**[Back to content](#contents)**

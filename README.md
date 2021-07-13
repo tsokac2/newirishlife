@@ -43,7 +43,7 @@ There was a lot of info about life in Ireland on the internet, but not essential
 
 
 ## Project Goals
-This project is my final project for the Code Institute's Full stack development programme. The main goal of this project is to create an e-commerce site using Django framework, which is hosted with AWS as well as implementing a fully functional payment system with Stripe.
+This project is my final project for the Code Institute's Full stack development program. The main goal of this project is to create an e-commerce site using the Django framework, which is hosted with AWS as well as implementing a fully functional payment system with Stripe.
 
 ## Site Owner Goals
 * Provide the users with a professional e-commerce online shop to allow secure purchases.

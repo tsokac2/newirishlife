@@ -652,12 +652,17 @@ Stripe's software and APIs online payments provider.
 
 For testing product purchasing and ordering functionality use the following details:
 
-| **Test Card Details** |
---- | ---
- Username | user 
- Full Name | default_full_name
- Phone number | default_phone_number
- Address Line1 | default_address_line1
+| **Testing Card Details** |
+--- | --- | --- | ---
+ Card Number | **4242 4242 4242 4242** | OneToOneField 'User' |  on_delete=models.CASCADE
+ Full Name | default_full_name | CharField | max_length=200, null=True, blank=True
+ Phone number | default_phone_number | CharField | max_length=20, null=True, blank=True
+ Address Line1 | default_address_line1 | CharField | max_length=80, null=True, blank=True
+ Address Line2 | default_address_line2 | CharField | max_length=80, null=True, blank=True
+ Town/City | default_town_or_city | CharField | max_length=40, null=True, blank=True
+ County | default_county | CountryField | blank_label='County', null=True, blank=True
+ Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
+ Country | default_country | CountryField | blank_label='Country', null=True, blank=True
 
 More details for the **"CHECKOUT"** testing steps view in _*.xlsx_ file test case number: **[TC021](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
 

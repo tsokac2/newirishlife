@@ -290,7 +290,7 @@ User stories are presented for 3 different User types:
         * _Product Image 3_
     * Superusers will receive form validation errors if inputs fields are not valid.
     * If the **"Add New Product"** process is completed, the superuser will be redirected to the _new dded product_ detail page to review added product detail page.
-    * **"Add New Product"** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)**
+    * **"Add New Product"** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/add_new_product.png)**
 
 
 * Definition by **EDIT PRODUCT** section -   As a _Superuser_, I want to have an ability to **"EDIT"** product that is already listed in a **[SHOP](https://newirishlife.herokuapp.com/products/)** section:
@@ -308,7 +308,7 @@ User stories are presented for 3 different User types:
     * Superusers will receive form validation errors if inputs fields are not valid.
     * If the **"EDIT"** process is completed successfully, the superuser will be redirected to the _edited product_ detail page to review product updates.
     * Superuser has an option to **"DELETE"** product with the **_"Are you sure you want to delete product?_"** confirmation option.
-    * **EDIT PRODUCT** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/edit_new_product.png)**
+    * **EDIT PRODUCT** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/edit_new_product.png)**
 
 **[Back to content](#contents)**
 
@@ -649,20 +649,6 @@ PostgreSQ open source object-relational database system.
 
 ## # [STRIPE](https://stripe.com/ie)
 Stripe's software and APIs online payments provider.
-
-For testing product purchasing and ordering functionality use the following details:
-
-| **Testing Card Details** |
---- | --- | --- | ---
- Card Number | 4242 4242 4242 4242 | OneToOneField 'User' |  on_delete=models.CASCADE
- Full Name | default_full_name | CharField | max_length=200, null=True, blank=True
- Phone number | default_phone_number | CharField | max_length=20, null=True, blank=True
- Address Line1 | default_address_line1 | CharField | max_length=80, null=True, blank=True
- Address Line2 | default_address_line2 | CharField | max_length=80, null=True, blank=True
- Town/City | default_town_or_city | CharField | max_length=40, null=True, blank=True
- County | default_county | CountryField | blank_label='County', null=True, blank=True
- Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
- Country | default_country | CountryField | blank_label='Country', null=True, blank=True
 
 More details for the **"CHECKOUT"** testing steps view in _*.xlsx_ file test case number: **[TC021](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
 

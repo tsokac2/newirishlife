@@ -17,11 +17,15 @@ advice, and planning this task can be made a lot easier.
     * **[Trip](#TRIP)**
     * **[Work](#WORK)**
     * **[Life](#LIFE)**
-    * **[Tips](#TIPS)**
-    * **[Signup](#SIGNUP)**
     * **[Login](#LOGIN)**
+    * **[Signup](#SIGNUP)**
     * **[Profile](#PROFILE)**
-    * **[Add Tip](#ADD-TIP)**
+    * **[Shop](#SHOP)**
+    * **[Product Details](#PRODUCT-DETAILS)**
+    * **[Bag](#BAG)**
+    * **[Checkout](#CHECKOUT)**
+    * **[Footer](#FOOTER)**
+    * **[Cross Project Features](#CROSS-PROJECT-FEATURES)**
 
 * **[Technologies used](#TECHNOLOGIES-USED)**
 * **[Testing](#TESTING)**
@@ -535,7 +539,7 @@ Formatted in 4 sections:
 * Social links for sharing purposes including **[Instagram](https://www.instagram.com/)**, **[Twitter](https://twitter.com/)**, **[Facebook](https://www.facebook.com/)**, **[Pinterest](https://www.pinterest.ie/)**.
 * Credits with developer **[website link](http://www.tomislavsokac.com/home)**.
 
-## CROS-PROJECT FEATURES
+## CROSS-PROJECT FEATURES
 * Alert messages for action confirmation regarding call-to-action purposes **[View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/messages_overview.png)**.
 * **_Quick Links..._** Quick link option for precise user search in specified link area - **[View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks.png)**.
 * Image slide-show representation section elements.
@@ -644,8 +648,25 @@ PostgreSQ open source object-relational database system.
 ## # [STRIPE](https://stripe.com/ie)
 Stripe's software and APIs online payments provider.
 
+For testing product purchasing and ordering functionality use the following details:
+
+| **Testing Card Details** |
+        --- | 
+        CARD NUMBER: | **4242 4242 4242 4242**
+        DATE: | **05/25**
+        CVC: | **555**
+
+More details for the "Checkout" testing steps view in test case number: **[TC021](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
+
 ## # [AWS S3](https://aws.amazon.com/s3/)
 Amazon Simple Storage Service (Amazon S3) object storage service.
+
+AWS S3 bucket was used for storing the following static files:
+* Image file for a specific section and custom png icons
+* JavaScript files
+* Global index.css file
+* Downloads files
+* Media files for SHOP section - 3 images pre one product item
 
 **[Back to content](#contents)**
 

@@ -654,7 +654,7 @@ For testing product purchasing and ordering functionality use the following deta
 
 | **Testing Card Details** |
 --- | --- | --- | ---
- Card Number | **4242 4242 4242 4242** | OneToOneField 'User' |  on_delete=models.CASCADE
+ Card Number | 4242 4242 4242 4242 | OneToOneField 'User' |  on_delete=models.CASCADE
  Full Name | default_full_name | CharField | max_length=200, null=True, blank=True
  Phone number | default_phone_number | CharField | max_length=20, null=True, blank=True
  Address Line1 | default_address_line1 | CharField | max_length=80, null=True, blank=True

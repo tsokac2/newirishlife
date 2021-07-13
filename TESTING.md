@@ -68,7 +68,7 @@
 * **JS [maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_maps.JPG)** - _Undefined variable `google`, `busMarkerUrl`, `dartMarkerUrl`, `luasMarkerUrl`, is being used, this can also be ignored._
 * **JS [product_quantity_input.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/product_quantity_input.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_product_quantity.JPG)** - _No Errors_
 * **JS [sort.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/sort.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_sort.JPG)** - _No Errors_
-* **JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/stripe_elements.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe.JPG)** - _No major errors. Arrow function warnings can be ignored and undefined variable Stripe is being used, this can also be ignored._
+* **JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/stripe_elements.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe_elements.JPG)** - _No major errors. Arrow function warnings can be ignored and undefined variable Stripe is being used, this can also be ignored._
 * **JS [toast.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/toast.js)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_toast.JPG)** - _No Errors_
 
 
@@ -144,7 +144,7 @@
 
 ## Test Cases Description and Results
 
-Full test results can be found in an excel document **[M4_TEST_CASES](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
+Full test results can be found in an _*.xlsx_ document **[M4_TEST_CASES](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
 
 ****
 

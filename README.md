@@ -141,8 +141,8 @@ User stories are presented for 3 different User types:
     * Users have an option to save login credentials with the **"Remember me"** check box.
     * The **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section contains quick _"cards"_ overview of the site and short introduction paragraph and a _"HERO"_ image gallery.
 
-* Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message to **![CONFIRM](wireframe link)** my email address:
-    * If the user is registered there is a **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** link for register users.
+* Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message that I received following **![CONFIRM](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email_confirm.jpg)**link in my mailbox::
+    * If the user is registered there is a **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** link for registered users.
     * For a successful registration process user must enter the following:
 
         | **Registration Form** |
@@ -157,8 +157,8 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
-* Definition by **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)**  section - On my **Profile** page I want to have the option to **UPDATE** my profile details, **LOGOUT** from my profile and **DELETE** my profile:
-    * User ![Profile Details]( wireframe image ) are listed in the following order:
+* Definition by **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)**  section - On my **Profile** page I want to have the option to **UPDATE** my profile details, **LOGOUT** from my profile, and **DELETE** my profile:
+    * User **[Profile Details](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/profile_details.jpg)** are listed in the following order:
         * Profile image
         * Full Name (If updated)
         * Username
@@ -264,14 +264,14 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
-* Definition by **CHECKOUT SUCCESS** section - As a _First Visitor_, I want to see all order details with **_"Checkout success message"_**:
-    * If the checkout process was successful user will receive an email Confirmation for Order Number - ![Email example](wireframe link).
+* Definition by **CHECKOUT SUCCESS** section - As a _First Visitor_, I want to see all order details with the **_"Checkout success message"_**:
+    * If the checkout process was successful user will receive an email Confirmation for Order Number - **[Email example](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/order_confirmation_email.jpg)**.
     * Users can quickly view orders details on generated order **"CHECKOUT SUCCESS"** page.
     * Users can view the following order details on the **CHECKOUT SUCCESS** page:
         * _Order Number_
         * _Order Date_
         * _Order Details_
-        * _Delivery addrress_
+        * _Delivery address_
         * _Billing Info_
     * Users have a link to go back to the **[SHOP](https://newirishlife.herokuapp.com/products/)** section and continue shopping.
 
@@ -289,11 +289,11 @@ User stories are presented for 3 different User types:
         * _Product Image 2_
         * _Product Image 3_
     * Superusers will receive form validation errors if inputs fields are not valid.
-    * If the **"Add New Product"** process is completed, the superuser will be redirected to the _new dded product_ detail page to review added product detail page.
+    * If the **"Add New Product"** process is completed, the superuser will be redirected to the _newly added product_ detail page to review added product detail page.
     * **"Add New Product"** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/add_new_product.png)**
 
 
-* Definition by **EDIT PRODUCT** section -   As a _Superuser_, I want to have an ability to **"EDIT"** product that is already listed in a **[SHOP](https://newirishlife.herokuapp.com/products/)** section:
+* Definition by **EDIT PRODUCT** section -   As a _Superuser_, I want to have the ability to **"EDIT"** product that is already listed in a **[SHOP](https://newirishlife.herokuapp.com/products/)** section:
     * Superusers can **"EDIT"** by _updating_ the following inputs fields:
         * _Product Category_
         * _Product SKU Number_
@@ -326,7 +326,7 @@ User stories are presented for 3 different User types:
 * **[PRODUCT DETAIL](https://newirishlife.herokuapp.com/products/4/)**
 * **[BAG](https://newirishlife.herokuapp.com/bag/)**
 
-**2.** Brief list of all pop-ups, alert messages, email layouts and their front-end placement.
+**2.** Brief list of all pop-ups, alert messages, email layouts, and their front-end placement.
 
 **3.** List all color pallets - usage - background color, font color, border.
 

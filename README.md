@@ -344,7 +344,7 @@ User stories are presented for 3 different User types:
 
 **10.** List CSS folder structure for SASS Pre-processor configuration.
 
-**11.** List of preferable Django packages for website front-end and backend performance.
+**11.** List of preferable Django packages for website front-end and back-end performance.
 
 **12.** Plan Django apps installation and main usage per website section.
 
@@ -363,7 +363,7 @@ User stories are presented for 3 different User types:
 
 **17.** Plan and implement **[Emailjs API](https://dashboard.emailjs.com/sign-in)** service for Newsletter form.
 
-**18.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
+**18.** Take notes for all major development issues, their solutions, challenges, project credits, and SLACK community guidance.
 
 **[Back to content](#contents)**
 
@@ -388,7 +388,7 @@ User stories are presented for 3 different User types:
 Formatted in three main sections:
 * Website logo
 * Website sections **[HOME](https://newirishlife.herokuapp.com/)**, **[TRIP](https://newirishlife.herokuapp.com/trip)**, **[WORK](https://newirishlife.herokuapp.com/work)**, **[LIFE](https://newirishlife.herokuapp.com/life)**.
-* _First Time Visitor_ User action links **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**.
+* _First-Time Visitor_ User action links **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)**, **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**.
 * _Active User_ action links **[SHOP](https://newirishlife.herokuapp.com/products/)**, **[BAG](https://newirishlife.herokuapp.com/bag/)**, **PROFILE**.
 
 ## HOME
@@ -408,7 +408,7 @@ Formatted in two main sub-sections:
 * **Google Maps** with a tracker for public transportation and _"Hot"_ locations in Dublin city with 3 markers in different colors for **Dublin Bus**, **Dart Train**, and **Luas** services - **[View Screenshot](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/google_maps_overview.png)**.
 
 ## WORK
-Introduction and quick links of the most popular Irish online recruitment sites with an additional section for online education possibilities.
+Introduction and quick links to the most popular Irish online recruitment sites with an additional section for online education possibilities.
 
 Formatted in two main sub-sections:
 * **_START HERE_** Most popular job search services for the Irish job market.
@@ -434,7 +434,7 @@ Formatted in three main sub-sections:
 * Introduction of web page purpose and what value it is bringing to an end-user.
 
 ## SIGNUP
-Section with the option to **_[Create profile](https://newirishlife.herokuapp.com/accounts/signup/)_** for full website management.
+Section with the option to **_[Create a profile](https://newirishlife.herokuapp.com/accounts/signup/)_** for full website management.
 
 Formatted in three main sub-sections:
 * **_[Create profile](https://newirishlife.herokuapp.com/accounts/signup/)_** Registration form including inputs fields for; __E-mail address_, _E-mail address confirmation_, _Username_, _Password_, _Password (again)_, and _SIGN UP_ button.
@@ -479,7 +479,7 @@ Formatted in three main profile sections:
     * Product Category (action link)
 
 ## PRODUCT DETAILS
-A section for each individual product and call-to-action buttons.
+A section for each product and call-to-action buttons.
 
 Formatted in four main profile sections:
 * Categories menu including a search input field.
@@ -497,7 +497,7 @@ Formatted in four main profile sections:
 **[Back to content](#contents)**
 
 ## BAG
-A section review and start **"Checkout"** process for requested items.
+A section review and start the **"Checkout"** process for requested items.
 
 Formatted in two sections:
 * Shopping **[BAG](https://newirishlife.herokuapp.com/bag/)** Total spending amount including:
@@ -518,7 +518,7 @@ Formatted in two sections:
     * **"X"** remove an item from the shopping **[BAG](https://newirishlife.herokuapp.com/bag/)** button
 
 ## CHECKOUT
-A section review and finish **"Checkout"** process for requested items.
+A section review and finish The **"Checkout"** process for requested items.
 
 Formatted in two sections:
 * _"Complete your order"_ form including the following form sections:
@@ -551,7 +551,7 @@ Formatted in 4 sections:
 Expansion plan:
 * Implementing "post a comment" section in a footer, regarding specific website content and website idea proposals.
 * Implement section for all necessary documentation in Ireland, regarding and PPS number, Bank Account option.
-* Implement section regarding social events and gathering for necessary user connection expansion.
+* Implement a section regarding social events and gathering for necessary user connection expansion.
 * Offer **_" Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
 * Create an email alert for admin and a friendly auto reminder for a user in case the user didn't finish the **_"Checkout/Payment"_** process.
 
@@ -602,13 +602,13 @@ Expansion plan:
 **[Back to content](#contents)**
 
 ## # [NODE.JS](https://nodejs.org/en/)
-* Use for NPM `package.json` file implemetation in to project root
+* Use for NPM `package.json` file implementation into the project root
 
 ## # [NPM](https://www.npmjs.com/)
 * Package manager - Use package - `node-sass`
 
 ## # [JAVASCRIPT](https://www.javascript.com/)
-Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
+Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In-Built Function_
 
 ## # [JQUERY](https://fonts.google.com/)
 **APPLIED jQuery DOM EVENTS** for highlighting **_"Quick Links"_** cards elements.
@@ -617,7 +617,7 @@ Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_,
 
 Every card element contains the _MAIN LINK_ source to the external services provider and a **_"Quick Links..."_** button element for loading detailed links when the user chose the services provider destination. **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks_life.png)**
 
-**_base.html_** template contains <div class="blur"> just after opening tag for the background _"fade-out"_ effect
+**_base.html_** template contains <div class="blur"> just after opening tag for the background _"fade-out"_ effect 
 
 **jQuery DOM Events** used for above-mentioned cards element functionality:
 
@@ -645,7 +645,7 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 Python Modules Full list in **[requirements.txt](https://github.com/tsokac2/newirishlife/blob/main/requirements.txt)**
 
 ## # [POSTGRESQL](https://www.postgresql.org/)
-PostgreSQ open source object-relational database system.
+PostgreSQL open source object-relational database system.
 
 ## # [STRIPE](https://stripe.com/ie)
 Stripe's software and APIs online payments provider.
@@ -840,13 +840,13 @@ All processed tests and results are described in detail **[HERE](https://github.
 
 **2.** Click on the _New_ button
 
-**3.** Select create a _New App_
+**3.** Select Create a _New App_
 
 **4.** Enter the app name
 
 **5.** Select region
 
-### Configure connection to Github Repository
+### Configure the connection to Github Repository
 **1.** Click the **_Deploy_** tab and select **_GitHub - Connect to GitHub_**
 
 **2.** Select GitHub
@@ -879,7 +879,7 @@ All processed tests and results are described in detail **[HERE](https://github.
     **11.** USE_AWS
 
 ### Enable automatic deployment:
-**1.** Select _Deploy_ tab and click _Enable Automation Deploys_
+**1.** Select the _Deploy_ tab and click _Enable Automation Deploys_
 
 **2.** Click the _Deploy_ button
 

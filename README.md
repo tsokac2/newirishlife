@@ -141,7 +141,7 @@ User stories are presented for 3 different User types:
     * Users have an option to save login credentials with the **"Remember me"** check box.
     * The **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section contains quick _"cards"_ overview of the site and short introduction paragraph and a _"HERO"_ image gallery.
 
-* Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message that I received the following **![CONFIRM](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email_confirm.jpg)**link in my mailbox::
+* Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message that I received the following **[CONFIRM](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email_confirm.jpg)**link in my mailbox::
     * If the user is registered there is a **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** link for registered users.
     * For a successful registration process user must enter the following:
 

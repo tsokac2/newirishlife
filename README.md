@@ -654,10 +654,10 @@ For testing product purchasing and ordering functionality use the following deta
 
 
 | **Test Card Details** |
-    --- | ---
-    Card Number |  **4242 4242 4242 4242** |
-    Expiry Date | any valid date ex. **02/25** |
-    CVC Number | any 3 digits number ex. **555** |
+--- | ---
+Card Number |  **4242 4242 4242 4242** |
+Expiry Date | any valid date ex. **02/25** |
+CVC Number | any 3 digits number ex. **555** |
 
 
 

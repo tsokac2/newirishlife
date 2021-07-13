@@ -290,7 +290,7 @@ User stories are presented for 3 different User types:
         * _Product Image 3_
     * Superusers will receive form validation errors if inputs fields are not valid.
     * If the **"Add New Product"** process is completed, the superuser will be redirected to the _new dded product_ detail page to review added product detail page.
-    * **"Add New Product"** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.PNG)**
+    * **"Add New Product"** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)**
 
 
 * Definition by **EDIT PRODUCT** section -   As a _Superuser_, I want to have an ability to **"EDIT"** product that is already listed in a **[SHOP](https://newirishlife.herokuapp.com/products/)** section:
@@ -308,7 +308,7 @@ User stories are presented for 3 different User types:
     * Superusers will receive form validation errors if inputs fields are not valid.
     * If the **"EDIT"** process is completed successfully, the superuser will be redirected to the _edited product_ detail page to review product updates.
     * Superuser has an option to **"DELETE"** product with the **_"Are you sure you want to delete product?_"** confirmation option.
-    * **EDIT PRODUCT** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/edit_new_product.PNG)**
+    * **EDIT PRODUCT** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/edit_new_product.png)**
 
 **[Back to content](#contents)**
 
@@ -654,10 +654,12 @@ For testing product purchasing and ordering functionality use the following deta
 
 
 | **Test Card Details** |
-    --- | 
-    Card Number:  **4242 4242 4242 4242** |
-    Expiry Date: any valid date ex. **02/25** |
-    CVC Number: any 3 digits number ex. **555** |
+    --- | ---
+    Card Number |  **4242 4242 4242 4242** |
+    Expiry Date | any valid date ex. **02/25** |
+    CVC Number | any 3 digits number ex. **555** |
+
+
 
 More details for the **"CHECKOUT"** testing steps view in _*.xlsx_ file test case number: **[TC021](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
 

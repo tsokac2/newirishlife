@@ -653,7 +653,7 @@ Stripe's software and APIs online payments provider.
 For testing product purchasing and ordering functionality use the following details:
 
 | **Test Card Details** |
---- | --- | --- | ---
+--- | ---
  Username | user 
  Full Name | default_full_name
  Phone number | default_phone_number

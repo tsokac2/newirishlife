@@ -141,7 +141,7 @@ User stories are presented for 3 different User types:
     * Users have an option to save login credentials with the **"Remember me"** check box.
     * The **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section contains quick _"cards"_ overview of the site and short introduction paragraph and a _"HERO"_ image gallery.
 
-* Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message that I received following **![CONFIRM](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email_confirm.jpg)**link in my mailbox::
+* Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message that I received the following **![CONFIRM](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email_confirm.jpg)**link in my mailbox::
     * If the user is registered there is a **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** link for registered users.
     * For a successful registration process user must enter the following:
 
@@ -918,7 +918,7 @@ To run a local Django server run the following command in CMD:
 * **[Bootstrap Carousel Fade Effect](https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/)**
 * **[Resizing Google Maps markers](https://stackoverflow.com/questions/15096461/resize-google-maps-marker-icon-image)**
 * **[Jasmine-jQuery: Set of jQuery helpers](https://bowercdn.net/c/jasmine-jquery-2.1.1/lib/jasmine-jquery.js)**
-* Project was developed by following the Code Institute video course **'Boutique Ado'**.
+* The project was developed by following the Code Institute video course **'Boutique Ado'**.
 
 ### ACKNOWLEDGEMENTS
 * **Anna Villanueva** for always fun and informative mentorship sessions.

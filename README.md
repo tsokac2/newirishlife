@@ -11,6 +11,25 @@ advice, and planning this task can be made a lot easier.
 ## Contents
 * **[User Experience Design (UX)](#UX)**
     * **[User Story](#User-Story)**
+        * **[First Visitor](#First-Visitor)**
+        * **[Active User](#Active-User)**
+        * **[Superuser](#Superuser)**
+        * **[Testing User Stories from User Experience (UX)](#Testing-User-Stories-from-User-Experience-(UX))**
+            * **[ NAVIGATION](#NAVIGATION)**
+            * **[HOME DEFINITION](#HOME-DEFINITION)**
+            * **[TRIP DEFINITION](#TRIP-DEFINITION)**
+            * **[WORK DEFINITION](#WORK-DEFINITION)**
+            * **[LIFE DEFINITION](#LIFE-DEFINITION)**
+            * **[LOGIN DEFINITION](#LOGIN-DEFINITION)**
+            * **[SIGNUP DEFINITION](#SIGNUP-DEFINITION)**
+            * **[PROFILE DEFINITION](#PROFILE-DEFINITION)**
+            * **[SHOP](#SHOP)**
+            * **[PRODUCT DETAIL DEFINITION](#PRODUCT-DETAIL-DEFINITION)**
+            * **[BAG](#BAG-DEFINITION)**
+            * **[CHECKOUT DEFINITION](#CHECKOUT-DEFINITION)**
+            * **[CHECKOUT SUCCESS DEFINITION](#CHECKOUT-SUCCESS-DEFINITION)**
+            * **[ADD NEW PRODUCT DEFINITION](#ADD-NEW-PRODUCT-DEFINITION)**
+            * **[EDIT PRODUCT DEFINITION](#EDIT-PRODUCT-DEFINITION)**
     * **[Design process](#Design-process)**
 * **[Features](#FEATURES)**
     * **[Home](#HOME)**
@@ -74,6 +93,7 @@ User stories are presented for 3 different User types:
 * Browsing through the website I want to have access to each URL directly so it feels like a single app website.
 * I want to receive a friendly message if I try to access a **URL** that doesn't exist or I don't have access to instead of the default browser **404** messages.
 
+**[Back to content](#contents)**
 
 ### Active User
 * I want to have the ability to register with my _Email Address_ or _User Name_, and _Password_ strength of my choice with error validation notifications for non-valid input.
@@ -94,6 +114,7 @@ User stories are presented for 3 different User types:
     * Orders history card has to contain a _Link/order_ number with full order details, _Order Date_, _Item Quantity + Item Name_, _Total_ amount spent per order. 
     * Ability to **Delete** my profile with a confirmation message.
 
+**[Back to content](#contents)**
 
 ### Superuser
 * As a Superuser access, I want to have the ability to access the admin console.
@@ -104,11 +125,13 @@ User stories are presented for 3 different User types:
 **[Back to content](#contents)**
 
 ### Testing User Stories from User Experience (UX)
-* **MAIN MENU** - As a _First Visitor_, I want to easily understand the main menu and links for different website sections:
+#### NAVIGATION
+* Definition by **MAIN MENU** - As a _First Visitor_, I want to easily understand the main menu and links for different website sections:
     * Upon entering the site user can see a clear navigation bar and site logo.
     * Each menu link is self-explanatory and as a _First Visitor_, the user can understand the main purpose of the link section.
     * The main menu is visible in the **Footers** section with a _"mirror image"_ of the top main menu navigation links.
 
+#### HOME DEFINITION
 * Definition by **[HOME](https://newirishlife.herokuapp.com/)** section - As a _First Visitor_, I want to easily understand the main purpose of the site and my benefit of the **[New Irish Life](https://newirishlife.herokuapp.com/)**:
     * The main purpose is represented with a short introduction paragraph and a _"HERO"_ image gallery.
     * Website content is pointed with four visual design cards for the top section of the site.
@@ -116,17 +139,20 @@ User stories are presented for 3 different User types:
     * Users can share **[New Irish Life](https://newirishlife.herokuapp.com/)** on four social media links presented in the bottom part of the footer.
     * The main navigation menu and footer are replicated through all main sections of the website.
 
+#### TRIP DEFINITION
 * Definition by **[TRIP](https://newirishlife.herokuapp.com/trip)** section - As a _First Visitor_, I want to easily understand section purpose with a short and fun intro paragraph and slide-show intro gallery:
     * Users can choose the most popular online travel brands to organize in card elements.
     * Each card element contains the main link, the brand website screenshot, the _"Quick links..."_ option, and a brand description.
     * Users can have access to the best Irish public transportation services.
     * Users can navigate through embedded **[Google Maps API](https://newirishlife.herokuapp.com/trip)** with colorful markers representing the most important bus stations, train stations, and tram stations in Dublin, Ireland.
 
+#### WORK DEFINITION
 * Definition by **[WORK](https://newirishlife.herokuapp.com/work)** section - As a  _First Visitor_, I want to easily understand how to start a job search process with the best possible preparation for the Irish work market:
     * Users can quickly understand where to start the job search process.
     * Users can understand what kind of **[CV](https://newirishlife.s3.eu-west-1.amazonaws.com/static/downloads/Tomislav+Sokac_CV.pdf)** template is necessary for a successful job search mission.
     * Users can find the best option for online education with the best offers.
 
+#### LIFE DEFINITION
 * Definition by **[LIFE](https://newirishlife.herokuapp.com/life)** section - As a _First Visitor_, I want to easily find the best online rental marketplaces, the most popular mobile networks provider, and large-chain grocery shops:
     * Users can choose one of the four most popular Irish online rental portals with quick links for share accommodation or buy options.
     * Users can quickly decide for best mobile network providers regarding broadband speed, bill pay offers, TV broadband offers.
@@ -134,6 +160,7 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
+#### LOGIN DEFINITION
 * Definition by **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section -  I want to easily login with my _email-or-username_ or and _password_ and be redirected to the HOME page with an updated menu with access to the **Profile** page and success login message:
     * If the user is not registered there is a **["Create profile"](https://newirishlife.herokuapp.com/accounts/signup/)** link for the registration process form. 
     * If the user forgot login credentials she/he can reset the password with the **["Forget Password?"](https://newirishlife.herokuapp.com/accounts/password/reset/)** link.
@@ -141,6 +168,7 @@ User stories are presented for 3 different User types:
     * Users have an option to save login credentials with the **"Remember me"** check box.
     * The **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** section contains quick _"cards"_ overview of the site and short introduction paragraph and a _"HERO"_ image gallery.
 
+#### SIGNUP DEFINITION
 * Definition by **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** section - I want to easily register with my _email_, _username_, and _password_ with a minimum of 8 characters of my choice and be redirected to the **Confirmation** link page with a message that I received the following **[CONFIRM](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/email_confirm.jpg)** link in my mailbox::
     * If the user is registered there is a **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** link for registered users.
     * For a successful registration process user must enter the following:
@@ -157,6 +185,7 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
+#### PROFILE DEFINITION
 * Definition by **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)**  section - On my **Profile** page I want to have the option to **UPDATE** my profile details, **LOGOUT** from my profile, and **DELETE** my profile:
     * User **[Profile Details](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/profile_details.jpg)** are listed in the following order:
         * Profile image
@@ -187,6 +216,7 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
+#### SHOP DEFINITION
 * Definition by **[SHOP](https://newirishlife.herokuapp.com/products/)** section - As a _First Visitor_, I want to see all listed products that **[New Irish life](https://newirishlife.herokuapp.com)** is offering with corresponding product categories:
     * Users can quickly browse through the **[SHOP](https://newirishlife.herokuapp.com/products/)** section and view products and products categories.
     * Users can select one of five categories from the categories menu and browse only that type of product.
@@ -195,14 +225,14 @@ User stories are presented for 3 different User types:
     * Users can quickly understand what is product _name_, _price_, _rating_, and _product categories_ from the product detail card.
     * If the user is a **SUPERUSER** then the _superuser_ has the option to ["Add New Product"]( wireframe link).
 
-
+#### PRODUCT DETAIL DEFINITION
 * Definition by **[PRODUCT DETAIL](https://newirishlife.herokuapp.com/products/4/)** section - As a _First Visitor_, I want to understand quickly what kind of type of product is on the selected **[PRODUCT DETAIL](https://newirishlife.herokuapp.com/products/4/)** page:
     * Users can view 3 product images browsing through image gallery thumbnails.
     * Users can view _product name_, _rating_, _special offer_, _product price_, chose _product quantity_, view product _description_.
     * Users have two options, a **["Keep Shopping"](https://newirishlife.herokuapp.com/products/)** link to browse different products or an **["Add To Bag"](https://newirishlife.herokuapp.com/bag/)** option for the browsed product.
     * If the user is a **SUPERUSER** then the _superuser_ has the option to **"EDIT"** or to **"DELETE"** browsed product.
 
-
+#### BAG DEFINITION
 * Definition by **[BAG](https://newirishlife.herokuapp.com/bag/)** section -  As a _First Visitor_, I want to view my **[BAG](https://newirishlife.herokuapp.com/bag/)** items by clicking on the BAG link in the menu:
     * Users can view items they "Add to Bag" with the following item(s) details:
         * _Item Name_
@@ -219,6 +249,7 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
+#### CHECKOUT DEFINITION
 * Definition by **CHECKOUT** section - As a _First Visitor_, I want to **CHECKOUT** securely with my valid credit card:
     * For the successful CHECKOUT process user must enter the following details:
 
@@ -264,6 +295,7 @@ User stories are presented for 3 different User types:
 
 **[Back to content](#contents)**
 
+#### CHECKOUT SUCCESS DEFINITION
 * Definition by **CHECKOUT SUCCESS** section - As a _First Visitor_, I want to see all order details with the **_"Checkout success message"_**:
     * If the checkout process was successful user will receive an email Confirmation for Order Number - **[Email example](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/order_confirmation_email.jpg)**.
     * Users can quickly view orders details on generated order **"CHECKOUT SUCCESS"** page.
@@ -275,7 +307,7 @@ User stories are presented for 3 different User types:
         * _Billing Info_
     * Users have a link to go back to the **[SHOP](https://newirishlife.herokuapp.com/products/)** section and continue shopping.
 
-
+#### ADD NEW PRODUCT DEFINITION
 * Definition by **ADD NEW PRODUCT** section -  As a _Superuser_, I want to have the ability to **"Add New Product"** in a **[SHOP](https://newirishlife.herokuapp.com/products/)** section:
     * Superusers can **"Add New Product"** by entering the following inputs fields:
         * _Product Category_
@@ -292,7 +324,7 @@ User stories are presented for 3 different User types:
     * If the **"Add New Product"** process is completed, the superuser will be redirected to the _newly added product_ detail page to review added product detail page.
     * **"Add New Product"** detail page **[view](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/add_new_product.png)**
 
-
+#### EDIT PRODUCT DEFINITION
 * Definition by **EDIT PRODUCT** section -   As a _Superuser_, I want to have the ability to **"EDIT"** product that is already listed in a **[SHOP](https://newirishlife.herokuapp.com/products/)** section:
     * Superusers can **"EDIT"** by _updating_ the following inputs fields:
         * _Product Category_
@@ -465,6 +497,8 @@ Formatted in three main profile sections:
     * Total amount spent
 * Call-to-action buttons: **Logout**, **Update Details**, **DELETE PROFILE**.
 
+**[Back to content](#contents)**
+
 ## SHOP
 A section that offers traditional Irish Souvenirs purchasing options.
 
@@ -477,6 +511,8 @@ Formatted in three main profile sections:
     * Product Price (action link)
     * Product Rating
     * Product Category (action link)
+
+**[Back to content](#contents)**
 
 ## PRODUCT DETAILS
 A section for each product and call-to-action buttons.
@@ -517,6 +553,8 @@ Formatted in two sections:
     * Update button
     * **"X"** remove an item from the shopping **[BAG](https://newirishlife.herokuapp.com/bag/)** button
 
+**[Back to content](#contents)**
+
 ## CHECKOUT
 A section review and finish The **"Checkout"** process for requested items.
 
@@ -531,6 +569,8 @@ Formatted in two sections:
     * Order Total
     * Delivery Cost 
     * Grand Total
+
+**[Back to content](#contents)**
 
 ## FOOTER
 Replicated through all website sections.
@@ -742,6 +782,8 @@ AWS S3 bucket was used for storing the following static files:
 * `const Bus747Stop = new google.maps.Marker({...});` pointing to Bus Stop for 747 Dublin Bus line for Dublin Airport
 
 **FULL SOURCE CODE:** GOOGLE MAPS API **[maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js)**
+
+**[Back to content](#contents)**
 
 ## # [HEROKU](https://www.heroku.com)
 * Cloud platform service used for hosting a "live" version of the project

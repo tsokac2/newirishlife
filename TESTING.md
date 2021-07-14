@@ -23,7 +23,7 @@
 * HTML **[WORK](https://newirishlife.herokuapp.com/work)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Work.JPG)**
 * HTML **[LIFE](https://newirishlife.herokuapp.com/life)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Life.JPG)**
 * HTML **[LOGIN](https://newirishlife.herokuapp.com/accounts/login/)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Login.JPG)**
-* HTML **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Signup.JPG)**
+* HTML **[SIGNUP](https://newirishlife.herokuapp.com/accounts/signup/)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Signup.JPG)**
 * HTML **[PASSWORD RESET](https://newirishlife.herokuapp.com/accounts/password/reset/)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset.JPG)**
 * HTML **[PASSWORD RESET DONE](https://newirishlife.herokuapp.com/accounts/password/reset/done/)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Password_reset_done.JPG)**
 * HTML **[PROFILE](https://newirishlife.herokuapp.com/accounts/login/)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Pofile.JPG)**

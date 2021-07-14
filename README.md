@@ -6,7 +6,9 @@ All of this can be difficult in the beginning but with the correct preparation,
 advice, and planning this task can be made a lot easier.
 **[New Irish Life](https://newirishlife.herokuapp.com/)** is a great starting point.
 
+
 ![Website Main Mockup](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Main.jpg)
+
 
 ## Contents
 * **[User Experience Design (UX)](#UX)**

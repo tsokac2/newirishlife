@@ -54,9 +54,7 @@
 * HTML **[CHECKOUT-ALL-ITEMS](https://newirishlife.herokuapp.com/checkout/)**- _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_All_Items.JPG)**
 * HTML **[CHECKOUT SUCCESS](https://newirishlife.herokuapp.com/checkout/)**- _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/HTML_W4_Checkout_Success.JPG)**
 
-
 **[Back to content](#contents)**
-
 
 ### [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 * **CSS [index.css](https://github.com/tsokac2/newirishlife/blob/main/static/css/index.css)** - No errors - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/CSS_W4_index_css.JPG)**

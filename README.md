@@ -85,8 +85,8 @@ User stories are presented for 3 different User types:
 * Visibly accessible **Main Menu** configure for any screen size with quick access to all website sections. 
 * In the **Trip** section, I want to have quick access to the most popular online travel brands and quick link options to chose from.
 * The **Trip** section will contain custom configurated Google Maps API with some options for bus, train, or tram stations with visible markers in different colors for the fastest navigation.
-* I the **Work** section, I want to have quick access to the most popular recruitment websites and quick link options to chose from.
-* I the **Life** section, I want to have quick access to the most up-to-date rental website,  most popular Irish mobile network providers, most popular grocery shop brands, and quick link options to chose from.
+* In the **Work** section, I want to have quick access to the most popular recruitment websites and quick link options to chose from.
+* In the **Life** section, I want to have quick access to the most up-to-date rental website,  most popular Irish mobile network providers, most popular grocery shop brands, and quick link options to chose from.
 * In the **Shop** section, I want to have the option to sort and search all displayed products by categories, prices, and keywords including quick links for the different product categories, ability to purchase _without_ a User Login process.
 * In the **Shop/checkout** section visible option to create a User Profile and save delivery information.
 * I want to have the ability to create my profile for the full **[New Irish Life](https://newirishlife.herokuapp.com/)** user experience (UX).
@@ -636,7 +636,7 @@ Expansion plan:
   * assets/scss/abstracts - global SASS **variables** and **mixins** function
   * assets/scss/base - global styles for html, body and special helper classes
   * assets/scss/components - carousel image slideshow, small screen navigation menu
-  * assets/scss/layout - styling for _HOME_, _TRIP_, _WORK_, _LIFE_, _TIPS_, _SIGN UP_, _LOGIN_
+  * assets/scss/layout - styling for _HOME_, _TRIP_, _WORK_, _LIFE_, _SHOP_, _SIGNUP_, _LOGIN_, _BAG_, _PRODUCT DETAILS_, _CHECKOUT_, _FOOTER_
   * assets/scss/_index.scss - referencing all `*.scss` files in folder structure, **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/sass_02.png)**
   * **SASS RESPONSIVE Mixins** function **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/sass_03.png)**
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`

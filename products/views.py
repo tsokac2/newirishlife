@@ -57,6 +57,9 @@ def products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
+    if not request.user.is_authenticated:
+        messages.info(request, 
+        "Hey! Create a profile and save your shopping details, you only need 30sec!")
     product = get_object_or_404(Product, pk=product_id)
     context = {'product': product, }
     return render(request, 'products/product_detail.html', context)

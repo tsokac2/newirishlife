@@ -2282,10 +2282,32 @@ body {
       .custom-toast .toast-body .checkout {
         font-size: 1.8rem;
         padding: .5rem .5rem; } }
-    .custom-toast .toast-body .checkout:hover {
+  .custom-toast .toast-body .checkout:hover {
       background: rgba(5, 65, 68, 0.25);
       color: #054144; }
-
+      .custom-toast .toast-body .toats-signup {
+        display: block;
+        margin: 0 auto;
+        padding: .5rem .3rem;
+        background-color: #085f63;
+        color: white;
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: .5s ease; }
+        @media (min-width: 360px) {
+          .custom-toast .toast-body .toats-signup {
+            font-size: 1.5rem; } }
+        @media (min-width: 576px) {
+          .custom-toast .toast-body .toats-signup {
+            font-size: 1.8rem;
+            padding: .5rem .5rem; } }
+        .custom-toast .toast-body .toats-signup:hover {
+          background: rgba(5, 65, 68, 0.25);
+          color: #054144; }
 .section-checkout {
   padding: 0;
   margin-top: 16.5rem; }

@@ -780,8 +780,17 @@ Expansion plan:
 | original_bag | TextField | null=False, blank=False, default='' |
 | stripe_pid | CharField | max_length=254, null=False, blank=False, default='' |
 
-**[Back to content](#contents)**
+#### OrderLineItem Model
 
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' |
+| product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE) |
+| product_size | CharField | max_length=2, null=True, blank=True |
+| quantity | IntegerField | null=False, blank=False, default=0 |
+| lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False |
+
+**[Back to content](#contents)**
 
 ### Database Modelling - PRODUCTS APP
 #### Product Model

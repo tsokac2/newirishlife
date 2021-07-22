@@ -47,7 +47,7 @@ advice, and planning this task can be made a lot easier.
     * **[Checkout](#CHECKOUT)**
     * **[Footer](#FOOTER)**
     * **[Cross Project Features](#CROSS-PROJECT-FEATURES)**
-
+* **[Information Architecture](#INFORMATION-ARCHITECTURE)**
 * **[Technologies used](#TECHNOLOGIES-USED)**
 * **[Testing](#TESTING)**
 * **[Deployment](#DEPLOYMENT)**
@@ -62,15 +62,18 @@ There was a lot of info about life in Ireland on the internet, but not essential
 </h3>
 <h2 align="center">Well, not anymore!</h2>
 
-
 ## Project Goals
 This project is my final project for the Code Institute's Full stack development program. The main goal of this project is to create an e-commerce site using the Django framework, which is hosted with AWS as well as implementing a fully functional payment system with Stripe.
+
+## Target Audience
+* People who are interested in moving to Ireland and start a new life.
+* People who want to learn more about the Irish lifestyle and work opportunities.
+* People who want to purchase traditional Irish souvenirs and gifts.
 
 ## Site Owner Goals
 * Provide the users with a professional e-commerce online shop to allow secure purchases.
 * Make a profit selling traditional Irish souvenirs.
 * Promote Ireland and the Irish way of living.
-
 
 ## User Story
 User stories are presented for 3 different User types:
@@ -81,55 +84,156 @@ User stories are presented for 3 different User types:
 **[Back to content](#contents)**
 
 ### First Visitor
-* As a new Irish resident, I want all **NECESSARY AND IMPORTANT** information for my **[New Irish Life](https://newirishlife.herokuapp.com/)** in one place and available from any device connected to the internet, so I can organize my life in a fun and simple way.
-* Visibly accessible **Main Menu** configure for any screen size with quick access to all website sections. 
-* In the **Trip** section, I want to have quick access to the most popular online travel brands and quick link options to chose from.
-* The **Trip** section will contain custom configurated Google Maps API with some options for bus, train, or tram stations with visible markers in different colors for the fastest navigation.
-* In the **Work** section, I want to have quick access to the most popular recruitment websites and quick link options to chose from.
-* In the **Life** section, I want to have quick access to the most up-to-date rental website,  most popular Irish mobile network providers, most popular grocery shop brands, and quick link options to chose from.
-* In the **Shop** section, I want to have the option to sort and search all displayed products by categories, prices, and keywords including quick links for the different product categories, ability to purchase _without_ a User Login process.
-* In the **Shop/checkout** section visible option to create a User Profile and save delivery information.
-* I want to have the ability to create my profile for the full **[New Irish Life](https://newirishlife.herokuapp.com/)** user experience (UX).
-* In the **Footer** section, I want to have main section links with the Newsletter User form following by Social media links/logo icons.
-* I want to stay up-to-date with all fresh information regarding work and lifestyle by subscribing to my email for newsletter services without creating the User Profile account.
-* Browsing through the website I want to have access to each URL directly so it feels like a single app website.
-* I want to receive a friendly message if I try to access a **URL** that doesn't exist or I don't have access to instead of the default browser **404** messages.
+
+- **CLEARLY, NECESSARY AND IMPORTANT**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Have all the necessary and important information | Organize my New Irish life in a fun and simple way |
+| First Visitor | Ability to view main content in images | So I can make quick and precise decision |
+| First Visitor | Read all content clearly | Enjoy using the site |
+
+- **NAVIGATION - MAIN MENU**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Main sections in the header area | So I can navigate the main content of the page quickly and easily |
+| First Visitor | I want to see the website logo and quick links for **LOGIN**, **SHOP**, **BAG** | Make a quick glance at website features and benefits |
+| First Visitor | Load each section from the main menu | Have a feeling for single app UX |
+| First Visitor | Access the website on both larger and smaller screened devices | Access the website on my phone and PC |
+
+- **HOME**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | View intro movie intro quote | Feel I'm very welcome to the website as a first visitor |
+| First Visitor | Read the intro section | Understand website purpose and my benefit |
+| First Visitor | View website cards elements | Make the quick decision where to click next for more information |
+
+- **TRIP**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Read section intro paragraph with image carousel | Understand section purpose and my benefits |
+| First Visitor | Four most popular online travel brands | Plan my trip to Ireland in the best possible way |
+| First Visitor | Four most popular public transportation providers | Plan my commute time and public transport budget |
+| First Visitor | Google Maps of Dublin city | Save all locations for **Bus**, **Dart** or **Luas** stations regarding my commute directions |
+
+- **WORK**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Read section intro paragraph with image carousel | Understand section purpose and my benefits |
+| First Visitor | Four most popular online recruitment websites | Plan and organize my job _"hunt"_ mission |
+| First Visitor | Four most popular online education providers | Make a decision for career changes and upskilling initiative |
+
+- **LIFE**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Read section intro paragraph with image carousel | Understand section purpose and my benefits |
+| First Visitor | Four most popular online rental websites | Plan and search best accommodation solution |
+| First Visitor | Four most popular mobile operators | Make a decision for TV and broadband provider |
+| First Visitor | Four most popular grocery shops brands | Plan my food, clothing, and home life budget |
+
+**[Back to content](#contents)**
+
+- **REGISTRATION**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Quickly understand **"Create Account"** process | Provide a correct _email address_, _username_, and _password_ by choice |
+| First Visitor | Be alerted if my enter details are incorrect | Check if I entering the right details on the correct input fields |
+| First Visitor | Received _email confirmation_ link in my mailbox | Be sure that I entered my email address for the successful login process |
+| First Visitor | Be alerted if a confirmation email is sent to my mailbox | Finish registration process and enjoy full benefits of the **New Irish Life** |
+| First Visitor | Click to confirmation link in my mailbox | Confirm my email address regarding the verification process |
+
+- **SHOP**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | Read section intro paragraph with image carousel | Understand section purpose and my benefits |
+| First Visitor | See all product categories | Browse products by category choice |
+| First Visitor | Have product sorting option | Sort products by price, rating, name, etc. |
+| First Visitor | See product link card | Quickly understand what is the product purpose |
+| First Visitor | Have a link for the individual product details page | Make a decision to _"Add product"_ to the shopping bag |
+
+- **BAG**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | View my _"Grand Total"_ amount regarding Bag items | Make a decision how much more I want to spend |
+| First Visitor | View my _"Delivery"_ cost  | Make a decision how much more I need to spend for the free delivery option |
+| First Visitor | View my sopping bag items | Update item quantity by my choice |
+| First Visitor | Have an option to remove the item from the bag | Control my spending limit with an updated _"Grand Total"_ amount |
+| First Visitor | Have an option to click on the **"Checkout"** link | Finish purchase process |
+
+**[Back to content](#contents)**
+
+- **CHECKOUT**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | View my order _"Summary"_ section | Quickly review my order items before I finish the payment process |
+| First Visitor | View my final _"Grand Total"_ amount  | Know how much my credit card will be charged |
+| First Visitor | Understand input my input details | Be sure that my order will be delivered to my entered address |
+| First Visitor | Have an option to click on links for _"Create an account"_ and _"login"_ | Registered as an active user or login with my login credentials |
+| First Visitor | Get alerted if my input details are correct | Be sure that input details are valid and correct |
+| First Visitor | Redirected to order confirmation details page with the success message | Be sure that my order is being processed correctly |
+
+- **LOGIN**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| First Visitor | View main section menu links| Quickly navigate to the chosen section |
+| First Visitor | View simple newsletters form | Subscribe with my email address |
+| First Visitor | Enter my Name and Email  | Received welcoming email for success subscription |
+| First Visitor | Have social media links | Share **New Irish Life** with friends and colleagues |
+| First Visitor | View developer website | View developer portfolio and recent projects |
 
 **[Back to content](#contents)**
 
 ### Active User
-* I want to have the ability to register with my _Email Address_ or _User Name_, and _Password_ strength of my choice with error validation notifications for non-valid input.
-* I want to receive a link for the _User Email_ confirmation process into my mailbox.
-* I want to Login with my _Username or Email_ and _Password_ with an error validation notification for non-valid input.
-* I want to have the option _"Remember Me"_ for my login credentials.
-* As an **Active User**, I want to have the option to reset my _Login credentials_.
-* On my profile page I want to have the following features listed:
-    * My Full name
-    * My Full name
-    * My Username
-    * My Email
-    * My Profile image
-    * My Phone Number
-    * Full Address
-    * Ability to **Edit** and **Update** all my profile details.
-    * List of my orders history, if none a quick link for the **[SHOP](https://newirishlife.herokuapp.com/products/)** section.
-    * Orders history card has to contain a _Link/order_ number with full order details, _Order Date_, _Item Quantity + Item Name_, _Total_ amount spent per order. 
-    * Ability to **Delete** my profile with a confirmation message.
+
+- **LOGIN**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| Active User | Enter my username or email and password | Successfully login for full website benefits |
+| Active User | Have option "Forgot Password" | Reset my password and start login process |
+| Active User | Have an option to "Reset" my password by entering my email | Received email reset password link |
+| Active User | Click on the reset password link in my mailbox | Be redirected to the _"Change Password"_ page |
+| Active User | Receive success message if my password was successfully changed | Successfully login and view in the message if I have any items in the shopping bag |
+
+- **USER PROFILE**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| Active User | See on my user profile page registered username, email, and created date | Have a remainder when I created my profile and what username and email I used for the registration and login process |
+| Active User | Chose profile image by my choice | Update my profile image by my own choice |
+| Active User | Update my shipping details | Use the updated details for my next order |
+| Active User | View my order history details | Track my spending history on the New Irish Life website |
+| Active User | Have an option to **Delete** my profile | Be alerted with confirming delete _"pop-up"_ message |
 
 **[Back to content](#contents)**
 
 ### Superuser
-* As a Superuser access, I want to have the ability to access the admin console.
-* As a Superuser I want to have the ability to upload a new product for the **[SHOP](https://newirishlife.herokuapp.com/products/)** section with success confirmation messages. 
-* As a Superuser I want to have direct links displayed for _Edit_ and _Delete_ products on the products detail page.
-* As a Superuser I want to have the ability to **Delete** existing products with a confirmation message.
+
+- **SITE ADMINISTRATION**
+
+| AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
+| ----------- | ----------- | ----------- |
+| Superuser | Have an option for Users accounts models |Create, Update, Edit and Delete all active accounts |
+| Superuser | Have an option to access the Users models section | Control and manage users account settings |
+| Superuser | Have an option to access Orders models | Generate products orders reports |
+| Superuser | Have an option to access Categorise and Products models | Create, Update, Edit and Delete all active categories and products |
 
 **[Back to content](#contents)**
 
 ### Testing User Stories from User Experience (UX)
 #### NAVIGATION
 * Definition by **MAIN MENU** - As a _First Visitor_, I want to easily understand the main menu and links for different website sections:
-    * Upon entering the site user can see a clear navigation bar and site logo.
+    * Upon entering the First Visitor can see a clear navigation bar and site logo.
     * Each menu link is self-explanatory and as a _First Visitor_, the user can understand the main purpose of the link section.
     * The main menu is visible in the **Footers** section with a _"mirror image"_ of the top main menu navigation links.
 
@@ -289,11 +393,13 @@ User stories are presented for 3 different User types:
     
     **_NOTE: This is a school project, hence the products are NOT for "real-world" order purposes. For testing the payment process please use the following test card details:_**
 
-    | **Test Card Details** |
-    --- | 
-    Card Number:  **4242 4242 4242 4242** |
-    Expiry Date: any valid date ex. **02/25** |
-    CVC Number: any 3 digits number ex. **555** |
+    #### Test Card
+
+    | Card | Test number |
+    | ----------- | ----------- |
+    | Card Number | **4242 4242 4242 4242** |
+    | Expiry Date | any valid date ex. **02/25** | 
+    | CVC Number | any 3 digits number ex. **555**| 
 
 **[Back to content](#contents)**
 
@@ -400,6 +506,7 @@ User stories are presented for 3 different User types:
 **18.** Take notes for all major development issues, their solutions, challenges, project credits, and SLACK community guidance.
 
 **[Back to content](#contents)**
+
 
 ### Wireframes
 * **[HOME](https://newirishlife.herokuapp.com/)** section general idea - for Large and Small screens devices - **[View](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Home.png)**
@@ -597,6 +704,119 @@ Expansion plan:
 * Offer **_" Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
 * Create an email alert for admin and a friendly auto reminder for a user in case the user didn't finish the **_"Checkout/Payment"_** process.
 
+**[Back to content](#contents)**
+
+****
+
+# INFORMATION ARCHITECTURE
+
+### Database Modelling - HOME APP
+#### About Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| title | CharField | max_length=254 |
+| movie_quote | TextField | max_length=300 |
+| paragraph_1 | TextField | max_length=300 |
+| paragraph_2 | TextField | max_length=300 |
+| paragraph_3 | TextField | max_length=300 |
+
+
+### Database Modelling - TRIP APP
+#### Trip Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| main_title | CharField | max_length=254 |
+| sub_title_1 | CharField | max_length=254 |
+| sub_title_2 | CharField | max_length=254 |
+| sub_title_3 | CharField | max_length=254 |
+
+
+### Database Modelling - WORK APP
+#### Work Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| main_title_1 | CharField | max_length=254 |
+| sub_title_1 | CharField | max_length=254 |
+| main_title_2 | CharField | max_length=254 |
+| sub_title_2 | CharField | max_length=254 |
+
+
+### Database Modelling - LIFE APP
+#### Life Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| main_title_1 | CharField | max_length=254 |
+| sub_title_1 | CharField | max_length=254 |
+| sub_title_2 | CharField | max_length=254 |
+| sub_title_3 | CharField | max_length=254 |
+
+**[Back to content](#contents)**
+
+### Database Modelling - CHECKOUT APP
+#### Order Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| order_number | CharField | max_length=32, null=False, editable=False |
+| user_profile | ForeignKey | on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
+| order_number | CharField | max_length=32, null=False, editable=False |
+| full_name | CharField | max_length=50, null=False, blank=False |
+| email | EmailField | max_length=50, null=False, blank=False |
+| phone_number | CharField | max_length=20, null=False, blank=False |
+| country  | CountryField | blank_label='Country *', null=False, blank=False |
+| postcode | CharField | max_length=20, null=False, blank=False |
+| town_or_city | CharField | max_length=40, null=False, blank=False |
+| street_address1 | CharField | max_length=80, null=True, blank=True |
+| street_address2 | CharField | max_length=80, null=True, blank=True |
+| county | CharField | max_length=80, null=True, blank=True |
+| date | DateTimeField | auto_now_add=True |
+| delivery_cost | DecimalField  | max_digits=6, decimal_places=2, null=False, default=0 |
+| order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 |
+| grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 |
+| original_bag | TextField | null=False, blank=False, default='' |
+| stripe_pid | CharField | max_length=254, null=False, blank=False, default='' |
+
+**[Back to content](#contents)**
+
+
+### Database Modelling - PRODUCTS APP
+#### Product Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| category | ForeignKey | 'Category', null=True, blank=True, on_delete=models.SET_NULL |
+| sku | CharField | max_length=254, null=True, blank=True |
+| name | CharField | max_length=254 |
+| description | TextField | max_length=2000 |
+| price | DecimalField | max_digits=6, decimal_places=2 |
+| sale_price | DecimalField | max_digits=6, decimal_places=2, null=True, blank=True |
+| rating | DecimalField | max_digits=2, decimal_places=1, null=True, blank=True |
+| image_1 | ImageField | null=True, blank=True |
+| image_2 | ImageField | null=True, blank=True |
+| image_3 | ImageField | null=True, blank=True |
+
+**[Back to content](#contents)**
+
+### Database Modelling - PROFILES APP
+#### UserProfile Model
+
+| DATABASE KEY | FIELD TYPE | VALIDATION |
+| ----------- | ----------- | ----------- |
+| user| OneToOneField | User, null=True, on_delete=models.CASCADE |
+| profile_image | ImageField | null=True, blank=True |
+| full_name | CharField | max_length=50, null=False, blank=False |
+| phone_number | CharField | max_length=20, null=True, blank=True |
+| street_address1 | CharField | max_length=80, null=True, blank=True |
+| street_address2 | CharField | max_length=80, null=True, blank=True |
+| city | CharField | max_length=40, null=True, blank=True |
+| county | CharField | max_length=80, null=True, blank=True |
+| postcode | CharField | max_length=20, null=False, blank=False |
+| country  | CountryField | blank_label='Country *', null=False, blank=False |
+| date | DateTimeField | auto_now_add=True, null=True |
 
 **[Back to content](#contents)**
 
@@ -693,6 +913,15 @@ PostgreSQL open source object-relational database system.
 Stripe's software and APIs online payments provider.
 
 More details for the **"CHECKOUT"** testing steps view in _*.xlsx_ file test case number: **[TC021](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/M4_Testing.xlsx)**
+
+#### Test Card
+
+| Card | Test number |
+| ----------- | ----------- |
+| Card Number | **4242 4242 4242 4242** |
+| Expiry Date | any valid date ex. **02/25** | 
+| CVC Number | any 3 digits number ex. **555**| 
+
 
 ## # [AWS S3](https://aws.amazon.com/s3/)
 Amazon Simple Storage Service (Amazon S3) object storage service.

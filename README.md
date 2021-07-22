@@ -818,13 +818,13 @@ Expansion plan:
 | user| OneToOneField | User, null=True, on_delete=models.CASCADE |
 | profile_image | ImageField | null=True, blank=True |
 | full_name | CharField | max_length=50, null=False, blank=False |
-| phone_number | CharField | max_length=20, null=True, blank=True |
-| street_address1 | CharField | max_length=80, null=True, blank=True |
-| street_address2 | CharField | max_length=80, null=True, blank=True |
-| city | CharField | max_length=40, null=True, blank=True |
-| county | CharField | max_length=80, null=True, blank=True |
-| postcode | CharField | max_length=20, null=False, blank=False |
-| country  | CountryField | blank_label='Country *', null=False, blank=False |
+| default_phone_number | CharField | max_length=20, null=True, blank=True |
+| default_street_address1 | CharField | max_length=80, null=True, blank=True |
+| default_street_address2 | CharField | max_length=80, null=True, blank=True |
+| default_city | CharField | max_length=40, null=True, blank=True |
+| default_county | CharField | max_length=80, null=True, blank=True |
+| default_postcode | CharField | max_length=20, null=False, blank=False |
+| default_country  | CountryField | blank_label='Country *', null=False, blank=False |
 | date | DateTimeField | auto_now_add=True, null=True |
 
 **[Back to content](#contents)**

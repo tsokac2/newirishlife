@@ -9,7 +9,9 @@
                     <div class="col-12 col-lg-10">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-6">
-                                <h1>TRIP</h1>
+                                {% for trip in trip_section %}
+                                    <h1>{{trip.main_title}}</h1>
+                                {% endfor %}
                                 <div class="intro-life">
                                     <p><strong>So you packed your bags!</strong></p>
                                     <p>But did you buy your plane ticket?</p>
@@ -58,7 +60,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <h2 class="sub-h2">CHOOSE WISELY</h2>
+                        {% for trip in trip_section %}
+                            <h2 class="sub-h2">{{ trip.sub_title_1 }}</h2>
+                        {% endfor %}
                     </div>
                     <div class="col-12 col-lg-10 cards-wrap p-0">
                         <div id="Card1" class="wrap">
@@ -152,7 +156,9 @@
                     <div class="col-12 col-lg-10">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-6">
-                                <h1>HOP ON</h1>
+                                {% for trip in trip_section %}
+                                    <h1>{{trip.sub_title_2}}</h1>
+                                {% endfor %}
                                 <div class="intro-life">
                                     <p><strong>Woo-hoo! Touch down, baby! Welcome to Ireland!</strong></p>
                                     <p>
@@ -280,7 +286,9 @@
                     <div class="col-12 col-lg-10">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-6">
-                                <h1 class="the-way-h1">THIS IS THE WAY</h1>
+                                {% for trip in trip_section %}
+                                    <h1 class="the-way-h1">{{trip.sub_title_3}}</h1>
+                                {% endfor %}
                                 <div class="intro-life">
                                     <p><strong>...says dude from the TV show "The Mandalorian"!</strong></p>
                                     <p>

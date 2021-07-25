@@ -1,0 +1,26 @@
+<div class="modal fade modal-wrap" id="logout-profile" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="logout-profile" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">    
+            <div class="modal-body">
+                {% load i18n %}
+                {% block inner_content %}
+                <div class="container-fluid p-0">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm-8">
+                            <div class="modal-heading">{% trans 'Are you sure you want to logout?' %}</div>
+                            <form method="post" action="{% url 'account_logout' %}">
+                                {% csrf_token %}
+                                {% if redirect_field_value %}
+                                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                                {% endif %}
+                                <a href="#" data-dismiss="modal">No</a>
+                                <button type="submit">{% trans 'Yes' %}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,7 +4,7 @@
         <div class="col-12 large-menu-wrap">
             <div class="row justify-content-center">  
                 <div class="col-2 mt-4 p-0 text-center ">
-                    <a href="{% url 'home' %}"><img src="{% static '/media/Logo.png' %}" 
+                    <a href="{% url 'home' %}"><img src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/Logo.png" 
                         width="95" alt="New Irish Logo"></a>
                 </div>
                 <div class="col-5 mt-4 p-0 large-left-menu text-center">
@@ -24,6 +24,9 @@
                             {% endif %}
                         </a>
                         <a href="{% url 'profile' %}"> <i class="fas fa-user-cog"></i>Profile</a>
+                        <a id="logout-btn" href="#" data-toggle="modal" data-target="#logout-profile">
+                            <strong><i class="fas fa-power-off"></i></strong>
+                        </a>
                     {% else %}
                         <a class="rm" href="{% url 'account_login' %}"><i class="fas fa-sign-in-alt"></i>Login</a>
                         <a class="rm" href="{% url 'products' %}"><i class="fas fa-shopping-cart"></i>SHOP</a>

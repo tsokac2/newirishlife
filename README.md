@@ -711,15 +711,15 @@ Expansion plan:
 # INFORMATION ARCHITECTURE
 
 ### Database Modelling - HOME APP
-#### About Model
+#### Home Model
 
 | DATABASE KEY | FIELD TYPE | VALIDATION |
 | ----------- | ----------- | ----------- |
 | title | CharField | max_length=254 |
-| movie_quote | TextField | max_length=300 |
-| paragraph_1 | TextField | max_length=300 |
-| paragraph_2 | TextField | max_length=300 |
-| paragraph_3 | TextField | max_length=300 |
+| movie_quote | TextField | max_length=254 |
+| p_1 | TextField | max_length=254 |
+| p_2 | TextField | max_length=254 |
+| p_3 | TextField | max_length=254 |
 
 
 ### Database Modelling - TRIP APP

@@ -46,7 +46,7 @@ MIDDLEWARE = [
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ROOT_URLCONF = 'newirishlife.urls'
+ROOT_URLCONF = 'newIrishLife.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -92,7 +92,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/"
 
-WSGI_APPLICATION = 'newirishlife.wsgi.application'
+WSGI_APPLICATION = 'newIrishLife.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -181,4 +181,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-

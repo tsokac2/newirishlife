@@ -26,29 +26,31 @@
                     <div class="col-12 quote-borders p-2"></div>
                     <div class="col intro-pitch">
                         <div class="row justify-content-center pitch-wrap">
-                            <div class="col-12 col-md-6 ">
-                                <h4>HELLO PEOPLE</h4>
-                                <h1>If you watch</h1>
-                                <p><span class="font-italic"><strong>"The Hobbit: An Unexpected Journey"</strong></span>
-                                    you will understand,
-                                    if not, we highly recommended watching the film or read a book...both rocks!
-                                </p>
-                                <p>
-                                    <strong>Now, on to business!</strong><br>
-                                    If you are planning or even
-                                    considering moving to Ireland, this is an awesome
-                                    starting point for you!
-                                </p>
-                                <p>
-                                    Here you can find some key info when you're planning your
-                                    <strong>Irish Adventure...</strong>
-                                </p>
-                                <p>
-                                    If you scroll down, you will see
-                                    3 main sections that you need to make this happen nice and smooth...<br>
-                                    <strong>Let's roll . . .</strong>
-                                </p>
-                            </div>
+                            {% for home in hello_section %}
+                                <div class="col-12 col-md-6 ">
+                                    <h4>HELLO PEOPLE</h4>
+                                    <h1>{{home.title}}</h1>
+                                    <p><span class="font-italic"><strong>{{home.title}}</strong></span>
+                                        you will understand,
+                                        if not, we highly recommended watching the film or read a book...both rocks!
+                                    </p>
+                                    <p>
+                                        <strong>Now, on to business!</strong><br>
+                                        If you are planning or even
+                                        considering moving to Ireland, this is an awesome
+                                        starting point for you!
+                                    </p>
+                                    <p>
+                                        Here you can find some key info when you're planning your
+                                        <strong>Irish Adventure...</strong>
+                                    </p>
+                                    <p>
+                                        If you scroll down, you will see
+                                        3 main sections that you need to make this happen nice and smooth...<br>
+                                        <strong>Let's roll . . .</strong>
+                                    </p>
+                                </div>
+                            {% endfor %}
                             <div class="col-12 col-md-6 composition mt-4">
                                 <img src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/galery-01.jpg" class="comp-photo o" alt="Gallery 01">
                                 <img src="https://newirishlife.s3.eu-west-1.amazonaws.com/static/media/galery-02.jpg" class="comp-photo t" alt="Gallery 02">

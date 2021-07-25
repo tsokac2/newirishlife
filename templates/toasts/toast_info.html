@@ -9,15 +9,19 @@
     <div class="toast-body bg-white">
         <div class="row message-wrap">
             <div class="col">
-                <strong>{{ message }}</strong>
-                    {% if not request.user.is_authenticated %}
+                {% for message in messages %}
+                    {% if "create_profile" in message.tags and not request.user.is_authenticated %}
+                        <strong>{{ message }}</strong>
                         <a href="{% url 'account_signup' %}" class="toats-signup mt-2">
                             <span class="icon">
                                 <i class="fas fa-user-plus"></i>
                             </span>
                             <span class="text-uppercase">Create Profile</span>
                         </a>
+                    {% else %}
+                        <strong>{{ message }}</strong>
                     {% endif %}
+                {% endfor %}
                 <hr class="mt-1 mb-3">
             </div>
         </div>      

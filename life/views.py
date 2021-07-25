@@ -1,7 +1,13 @@
 from django.shortcuts import render
+from .models import Life
 
 
-def index(request):
-    """ A view to return the Life page """
+def life(request):
+    """ A view to return the Life template """
+    life_section = Life.objects.all()
+    template = 'life/life.html'
+    context = {
+        'life_section': life_section
+    }
 
-    return render(request, 'life/life.html')
+    return render(request, template, context)

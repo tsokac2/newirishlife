@@ -9,7 +9,9 @@
                     <div class="col-12 col-lg-10">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-6">
-                                <h1>LIFE</h1>
+                                {% for life in life_section %}
+                                    <h1>{{life.main_title}}</h1>
+                                {% endfor %}
                                 <div class="intro-life">
                                     <p><strong>Beauty, culture, great craic, and plenty to do!</strong></p>
                                     <p>There’s always craic to be had, and you’re never more than a stone’s throw away from nature.</p>
@@ -53,7 +55,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <h2 class="sub-h2">ACCOMMODATION</h2>
+                        {% for life in life_section %}
+                            <h2 class="sub-h2">{{life.sub_title_1}}</h2>
+                        {% endfor %}
                     </div>
                     <div class="col-12 col-lg-10 cards-wrap p-0">
                         <div id="Card1" class="wrap">
@@ -144,7 +148,9 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
                     <div class="col-12 text-center">
-                        <h2 class="sub-h2">MOBILE NETWORKS</h2>
+                        {% for life in life_section %}
+                            <h2 class="sub-h2">{{life.sub_title_2}}</h2>
+                        {% endfor %}
                     </div>
                     <div class="col-12 col-lg-10 cards-wrap p-0">
                         <div id="Card5" class="wrap">
@@ -235,7 +241,9 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10 p-2 sub-section-border"></div>
                     <div class="col-12 text-center">
-                        <h2 class="sub-h2">GROCERY SHOPS</h2>
+                        {% for life in life_section %}
+                            <h2 class="sub-h2">{{life.sub_title_3}}</h2>
+                        {% endfor %}
                     </div>
                     <div class="col-12 col-lg-10 cards-wrap p-0">
                         <div id="Card9" class="wrap">

@@ -7,3 +7,4 @@ class TestViews(TestCase):
         response = self.client.get('/trip')
         self.assertEqual(response.status_code, 200)
         self. assertTemplateUsed(response, 'trip/trip.html')
+

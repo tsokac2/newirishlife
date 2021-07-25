@@ -1,9 +1,17 @@
 from django.shortcuts import render
+from .models import Work
 
 
-def index(request):
-    """ A view to return the Work page """
+def work(request):
+    """ A view to return the Work template """
+    work_section = Work.objects.all()
+    template = 'work/work.html'
+    context = {
+        'work_section': work_section
+    }
 
-    return render(request, 'work/work.html')
+    return render(request, template, context)
+    
+
 
 

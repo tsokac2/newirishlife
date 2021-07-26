@@ -704,13 +704,14 @@ Expansion plan:
 * Implement a section regarding social events and gathering for necessary user connection expansion.
 * Offer **_" Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
 * Create an email alert for admin and a friendly auto reminder for a user in case the user didn't finish the **_"Checkout/Payment"_** process.
+* Migrate database models following user requirements, future vendors collaborations, and overall project expanding process. 
 
 **[Back to content](#contents)**
 
 ****
 
 # INFORMATION ARCHITECTURE
-
+* Database models are designed with the purpose of continuous front-end content updates for the end-user.
 ### Database Modelling - HOME APP
 #### Home Model
 

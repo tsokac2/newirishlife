@@ -155,7 +155,7 @@ User stories are presented for 3 different User types:
 | First Visitor | Read section intro paragraph with image carousel | Understand section purpose and my benefits |
 | First Visitor | See all product categories | Browse products by category choice |
 | First Visitor | Have product sorting option | Sort products by price, rating, name, etc. |
-| First Visitor | Search products by specific **[_" keyword"_](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/keywords_search.JPG)** referencing product title | find products that contain my search query |
+| First Visitor | Search products by specific **[_" keyword"_](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/keywords_search.jpg)** referencing product title | find products that contain my search query |
 | First Visitor | See product link card | Quickly understand what is the product purpose |
 | First Visitor | Have a link for the individual product details page | Make a decision to _"Add product"_ to the shopping bag |
 

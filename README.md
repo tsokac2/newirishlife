@@ -711,7 +711,7 @@ Expansion plan:
 ****
 
 # INFORMATION ARCHITECTURE
-* Database models are designed with the purpose of continuous front-end content updates for the end-user.
+* Database models are designed with the purpose of continuous front-end content updates regarding end-user and market requirements.
 ### Database Modelling - HOME APP
 #### Home Model
 

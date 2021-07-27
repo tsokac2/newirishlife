@@ -125,7 +125,7 @@ User stories are presented for 3 different User types:
 | ----------- | ----------- | ----------- |
 | First Visitor | Read section intro paragraph with image carousel | Understand section purpose and my benefits |
 | First Visitor | Four most popular online recruitment websites | Plan and organize my job _"hunt"_ mission |
-| First Visitor | Four most popular online education providers | Make a decision for career changes and upskilling initiative |
+| First Visitor | Four most popular online education providers | Decide for career changes and upskilling initiative |
 
 - **LIFE**
 
@@ -164,7 +164,7 @@ User stories are presented for 3 different User types:
 | AS A/AN     | I WANT TO BE ABLE TO ... | SO THAT I CAN... |
 | ----------- | ----------- | ----------- |
 | First Visitor | View my _"Grand Total"_ amount regarding Bag items | Make a decision how much more I want to spend |
-| First Visitor | View my _"Delivery"_ cost  | Make a decision how much more I need to spend for the free delivery option |
+| First Visitor | View my _"Delivery"_ cost  | Make a decision how much more I need to spend on the free delivery option |
 | First Visitor | View my sopping bag items | Update item quantity by my choice |
 | First Visitor | Have an option to remove the item from the bag | Control my spending limit with an updated _"Grand Total"_ amount |
 | First Visitor | Have an option to click on the **"Checkout"** link | Finish purchase process |
@@ -227,7 +227,7 @@ User stories are presented for 3 different User types:
 | Superuser | Have an option for Users accounts models |Create, Update, Edit and Delete all active accounts |
 | Superuser | Have an option to access the Users models section | Control and manage users account settings |
 | Superuser | Have an option to access Orders models | Generate products orders reports |
-| Superuser | Have an option to access Categorise and Products models | Create, Update, Edit and Delete all active categories and products |
+| Superuser | Have an option to access Categorise and Products models | Create, Update, Edit ,and Delete all active categories and products |
 
 **[Back to content](#contents)**
 
@@ -329,7 +329,7 @@ User stories are presented for 3 different User types:
     * Users can select one of five categories from the categories menu and browse only that type of product.
     * Users can sort all products by the following queries with a sort _dropdown menu_.
     * Users can search for a product by using a _search bar_ with the specific _keyword_ of their choice.
-    * Users can quickly understand what is product _name_, _price_, _rating_, and _product categories_ from the product detail card.
+    * Users can quickly understand product names, price, rating, and product categories from the detail card.
     * If the user is a **SUPERUSER** then the _superuser_ has the option to ["Add New Product"]( wireframe link).
 
 #### PRODUCT DETAIL DEFINITION
@@ -890,7 +890,7 @@ Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_,
 
 Every card element contains the _MAIN LINK_ source to the external services provider and a **_"Quick Links..."_** button element for loading detailed links when the user chose the services provider destination. **[EXAMPLE](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/quicklinks_life.png)**
 
-**_base.html_** template contains <div class="blur"> just after opening tag for the background _"fade-out"_ effect 
+**_base.html_** template contains <div class="blur"> just after opening tag for the background _"fade-out"_  effect 
 
 **jQuery DOM Events** used for above-mentioned cards element functionality:
 

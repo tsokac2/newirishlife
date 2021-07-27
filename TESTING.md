@@ -66,7 +66,7 @@
 * **JS [maps.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/maps.js)** - _Undefined variable `google`, `busMarkerUrl`, `dartMarkerUrl`, `luasMarkerUrl`, is being used, this can also be ignored._ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_maps.JPG)** 
 * **JS [product_quantity_input.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/product_quantity_input.js)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_product_quantity.JPG)** 
 * **JS [sort.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/sort.js)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_sort.JPG)**
-* **JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/stripe_elements.js)** - _No major errors. Arrow function warnings can be ignored and the undefined variable Stripe is being used, this can also be ignored._ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe_elements.JPG)** 
+* **JS [stripe_elements.js](https://github.com/tsokac2/newirishlife/blob/main/checkout/static/checkout/js/stripe_elements.js)** - _No major errors. Arrow function warnings can be ignored and the undefined variable Stripe is being used, this can also be ignored._ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_stripe_elements.JPG)** 
 * **JS [toast.js](https://github.com/tsokac2/newirishlife/blob/main/static/js/toast.js)** - _No Errors_ - **[TEST RESULT](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/JS_toast.JPG)**
 
 

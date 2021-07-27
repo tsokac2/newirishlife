@@ -364,8 +364,13 @@ Since developers don't have control of Heroku and AWS S3 cloud services/servers,
 Similar behaviors are spotted during the development and testing process.
 
 For testing product purchasing and ordering functionality use the following details:
-* **CARD NUMBER:** _4242 4242 4242 4242_
-* **DATE:** _05/25_
-* **CVC:** _555_
+
+#### Test Card
+
+| Card | Test number |
+| ----------- | ----------- |
+| Card Number | **4242 4242 4242 4242** |
+| Expiry Date | any valid date ex. **02/25** | 
+| CVC Number | any 3 digits number ex. **555**| 
 
 **[Back to content](#contents)**
